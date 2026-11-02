@@ -1,0 +1,3839 @@
+
+  <ItemGroup>
+    <Content Include="ActiveReports.ReportService.asmx" />
+    <Content Include="AllergenCode\AllergenCode.aspx" />
+    <Content Include="AllergenCode\AllergenCodeEditor.ascx" />
+    <Content Include="AllergenCode\AllergenCodeGridView.ascx" />
+    <Content Include="AllergenCode\AllergenCodeReport.aspx" />
+    <Content Include="AllergenCode\AssignAllergenCode.aspx" />
+    <Content Include="Buildings\BuildingUnitLoadingBayStatus.aspx" />
+    <Content Include="Buildings\ManageBuildingUnitRowLoadingBays.aspx" />
+    <Content Include="css\Customer\meiji.css" />
+    <Content Include="css\SchedulerPageReadOnly.css" />
+    <Content Include="css\SchedulerReadOnlyCalendarIframe.css" />
+    <Content Include="css\WarehousingClientSchedule.css" />
+    <Content Include="css\ScheduleActivities.css" />
+    <Content Include="css\SchedulerPage.css" />
+    <Content Include="css\SchedulerCalendarIframe.css" />
+    <Content Include="css\custom-theme\images\report.png" />
+    <Content Include="css\custom-theme\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="css\custom-theme\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="css\custom-theme\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="css\custom-theme\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="css\custom-theme\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\custom-theme\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="css\custom-theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="css\fullcalendar\main.css" />
+    <Content Include="DailyInventory\DailyReports.aspx" />
+    <Content Include="DailyInventory\PalletMovementsPage.aspx" />
+    <Content Include="DailyInventory\DailyChecksPage.aspx" />
+    <Content Include="DailyInventory\DailyDocketPrintPage.aspx" />
+    <Content Include="DailyInventory\StockOutLineEdit.ascx" />
+    <Content Include="DailyInventory\StockInLineEdit.ascx" />
+    <Content Include="DailyInventory\StockOutDailyPage.aspx" />
+    <Content Include="DailyInventory\StockInDailyPage.aspx" />
+    <Content Include="DailyInventory\StockOutsHistoryPage.aspx" />
+    <Content Include="DailyInventory\StockInsHistoryPage.aspx" />
+    <Content Include="Distribution\DistributionDeliveryMethodEditor.ascx" />
+    <Content Include="Distribution\DistributionDeliveryMethods.aspx" />
+    <Content Include="Distribution\DistributionOrderChargeEditor.ascx" />
+    <Content Include="Distribution\DistributionOrderCharges.aspx" />
+    <Content Include="Distribution\DistributionOrderProcessing.aspx" />
+    <Content Include="Distribution\DistributionOrdersListing.ascx" />
+    <Content Include="Distribution\DistributionPackageChargeEditor.ascx" />
+    <Content Include="Distribution\DistributionPackagingCharges.aspx" />
+    <Content Include="Distribution\DistributionShippingChargeEditor.ascx" />
+    <Content Include="Distribution\DistributionShippingCharges.aspx" />
+    <Content Include="Distribution\DistributionStockOutLineEdit.ascx" />
+    <Content Include="EmployeeActivity\EmployeeActivity.aspx" />
+    <Content Include="Error\ClientErrorHandler.aspx" />
+    <Content Include="Error\DailyInventoryErrorHandler.aspx" />
+    <Content Include="Error\DistributionErrorHandler.aspx" />
+    <Content Include="ExtraServices\DistributionExtraServiceEditor.ascx" />
+    <Content Include="GeneratedReports\Default.txt" />
+    <Content Include="GroupedStockIns\GroupStockIn.aspx" />
+    <Content Include="GroupedStockIns\GroupStockInArrivedControl.ascx" />
+    <Content Include="GroupedStockIns\GroupStockInCancel.ascx" />
+    <Content Include="GroupedStockIns\GroupStockInLine.ascx" />
+    <Content Include="GroupedStockIns\GroupStockInStage1.ascx" />
+    <Content Include="GroupedStockIns\GroupStockInStage2.ascx" />
+    <Content Include="GroupedStockIns\GroupStockInStage3.ascx" />
+    <Content Include="GroupedStockIns\GroupStockInStage4.ascx" />
+    <Content Include="Home\DailyInventoryHome.aspx" />
+    <Content Include="Home\DistributionHome.aspx" />
+    <Content Include="Home\WarehouseOpHomeView.ascx" />
+    <Content Include="images\Allergen.png" />
+    <Content Include="images\AnimatedSquirrel.gif" />
+    <Content Include="images\audit.png" />
+    <Content Include="images\Back.png" />
+    <Content Include="images\captcha_icon.png" />
+    <Content Include="images\Cart.png" />
+    <Content Include="images\CartEmpty.png" />
+    <Content Include="images\Confirm_Dark.png" />
+    <Content Include="images\Confirm_Light.png" />
+    <Content Include="images\conventional.jpg" />
+    <Content Include="images\CustomerImages\821\MeijiLogo.jpg" />
+    <Content Include="images\CustomerImages\821\meijiSplashLogo.jpg" />
+    <Content Include="images\Exported.png" />
+    <Content Include="images\BuildingPerformance.png" />
+    <Content Include="images\EmployeeActivity.png" />
+    <Content Include="images\graphIcon.png" />
+    <Content Include="images\GridCollapse.png" />
+    <Content Include="images\GridExpand.png" />
+    <Content Include="images\loadingdockclosed.png" />
+    <Content Include="images\loadingdockopen.png" />
+    <Content Include="images\lock_icon.png" />
+    <Content Include="images\loginsplash.jpg" />
+    <Content Include="images\Logo\STAWMS_GreyscaleLogo_HiRes.jpg" />
+    <Content Include="images\Logo\STAWMS_GreyscaleLogo_HiRes_Transparent.png" />
+    <Content Include="images\Logo\STAWMS_GreyscaleLogo_LoRes.jpg" />
+    <Content Include="images\Logo\STAWMS_GreyscaleLogo_LoRes_Transparent.png" />
+    <Content Include="images\Logo\STAWMS_Logo_HiRes.jpg" />
+    <Content Include="images\Logo\STAWMS_Logo_HiRes.png" />
+    <Content Include="images\Logo\STAWMS_Logo_HiRes_Transparent.png" />
+    <Content Include="images\Logo\STAWMS_Logo_LoRes.jpg" />
+    <Content Include="images\Logo\STAWMS_Logo_LoRes.png" />
+    <Content Include="images\Logo\STAWMS_Logo_LoRes_Transparent.png" />
+    <Content Include="images\NotFound.png" />
+    <Content Include="images\refresh2.png" />
+    <Content Include="images\StawmsLogo.jpg" />
+    <Content Include="images\userimages\2013101745BV2Unit5-copy.jpg" />
+    <Content Include="images\userimages\2013101745BV2Unit5.jpg" />
+    <Content Include="images\userimages\2013102221CorkRoadLockups.jpg" />
+    <Content Include="images\userimages\201352840BV2_Units6.jpg" />
+    <Content Include="images\userimages\201352840BV2_Units6OLD.jpg" />
+    <Content Include="images\userimages\201421253BV1_Unit3.jpg" />
+    <Content Include="images\userimages\20142637BV1_Unit1.jpg" />
+    <Content Include="images\userimages\201492556CR1Layout.jpg" />
+    <Content Include="images\userimages\201522717Unit5.png" />
+    <Content Include="images\userimages\201522738KilUnit4.png" />
+    <Content Include="images\userimages\2015320Kil1Unit3.png" />
+    <Content Include="images\userimages\2015321Kil1Unit1.png" />
+    <Content Include="images\userimages\20153240Kil1Unit2.png" />
+    <Content Include="images\userimages\201532536Kil1Unit4A.png" />
+    <Content Include="images\userimages\201542215ShannonTransport.jpg" />
+    <Content Include="images\userimages\201551121SR1.png" />
+    <Content Include="images\userimages\201551121SR1copy.png" />
+    <Content Include="images\userimages\20156224NEX1.gif" />
+    <Content Include="images\userimages\20156936prldublin.gif" />
+    <Content Include="images\userimages\20156940prlkilkenny.gif" />
+    <Content Include="images\userimages\201572232pulse.png" />
+    <Content Include="images\userimages\201572233Pulse.gif" />
+    <Content Include="images\userimages\20157292CRKRD2.png" />
+    <Content Include="images\userimages\20157742IECdublin.gif" />
+    <Content Include="images\userimages\20158443Musgraves.gif" />
+    <Content Include="images\userimages\2016117136CR3Layout_07112016.jpg" />
+    <Content Include="images\userimages\20162251201622350BV5 pic.png" />
+    <Content Include="images\userimages\2016418kill_unit5c image.png" />
+    <Content Include="images\userimages\201642141Pulse clonmel.jpg" />
+    <Content Include="images\userimages\201642814CorkRoad.jpg" />
+    <Content Include="images\userimages\20164412bergins.jpg" />
+    <Content Include="images\userimages\20164413bergins.jpg" />
+    <Content Include="images\userimages\20164857ROSB_1.png" />
+    <Content Include="images\userimages\201651724stl.jpg" />
+    <Content Include="images\userimages\20169918Dun1.jpg" />
+    <Content Include="images\userimages\20172619unit 8.png" />
+    <Content Include="images\userimages\201751110DUN UNIT2.xlsx.jpg" />
+    <Content Include="images\userimages\201752230Dun1_3.jpg" />
+    <Content Include="images\UptimeLogs.png" />
+    <Content Include="images\userimages\201753130ambulance.JPG" />
+    <Content Include="images\userimages\201753139KIL1-5C Layout 75.jpg" />
+    <Content Include="images\userimages\201771449smp1.jpg" />
+    <Content Include="images\userimages\201771835Dun Unit4.png" />
+    <Content Include="images\userimages\201792139rowA.png" />
+    <Content Include="images\userimages\201792139RowC.png" />
+    <Content Include="images\userimages\BEL2.jpg" />
+    <Content Include="images\userimages\BelUnit3.JPG" />
+    <Content Include="images\userimages\BelviewRowG.JPG" />
+    <Content Include="images\userimages\BV2Unit7.png" />
+    <Content Include="images\userimages\BV2_Unit8.jpg" />
+    <Content Include="images\userimages\BV4 Plan 2.jpg" />
+    <Content Include="images\userimages\GSK Unit Plan2.jpg" />
+    <Content Include="images\userimages\KIL2 Narrow Aisle.jpg" />
+    <Content Include="images\userimages\KIL2STA.jpg" />
+    <Content Include="images\userimages\NEX Racking.jpg" />
+    <Content Include="images\userimages\Slievrue.png" />
+    <Content Include="images\userimages\STC1.jpg" />
+    <Content Include="images\userimages\Unit3 Map.JPG" />
+    <Content Include="images\userimages\Unit7 Map Ver03.jpg" />
+    <Content Include="images\userimages\Unit9.png" />
+    <Content Include="images\user_icon.png" />
+    <Content Include="Integration\IntegrationFileReprocess.aspx" />
+    <Content Include="Integration\IntegrationFileReprocessGridView.ascx" />
+    <Content Include="Invoicing\ClientInvoiceGridView.ascx" />
+    <Content Include="Invoicing\ClientInvoicePage.aspx" />
+    <Content Include="javascript\AllergenCode.js" />
+    <Content Include="javascript\Barcoding.js" />
+    <Content Include="javascript\BestBeforeEdits.js" />
+    <Content Include="javascript\BuildingMap.js" />
+    <Content Include="javascript\BuildingMapDivisionBays.js" />
+    <Content Include="javascript\Buildings.js" />
+    <Content Include="javascript\ClientPalletStatus.js" />
+    <Content Include="javascript\Draggable.js" />
+    <Content Include="javascript\DriverPickUps.js" />
+    <Content Include="javascript\fullcalendar\locales-all.js" />
+    <Content Include="javascript\fullcalendar\main.js" />
+    <Content Include="javascript\genericFunctionUtils.js" />
+    <Content Include="javascript\GroupStockIn.js" />
+    <Content Include="javascript\Home.js" />
+    <Content Include="javascript\Invoicing.js" />
+    <Content Include="javascript\jquery\1_8_12\jquery-ui-min.js" />
+    <Content Include="javascript\jquery\fileuploader.js" />
+    <Content Include="javascript\jquery\images\help.gif" />
+    <Content Include="javascript\jquery\images\important.gif" />
+    <Content Include="javascript\jquery\images\info.gif" />
+    <Content Include="javascript\jquery\images\title.gif" />
+    <Content Include="javascript\jquery\jquery-ui-min.js" />
+    <Content Include="javascript\jquery\jquery.ajaxQueue.js" />
+    <Content Include="javascript\jquery\jquery.alerts.css" />
+    <Content Include="javascript\jquery\jquery.alerts.js" />
+    <Content Include="javascript\jquery\jquery.autocomplete.css" />
+    <Content Include="javascript\jquery\jquery.autocomplete.js" />
+    <Content Include="javascript\jquery\jquery.autocomplete.min.js" />
+    <Content Include="javascript\jquery\jquery.autocomplete.pack.js" />
+    <Content Include="javascript\jquery\jquery.bgiframe.min.js" />
+    <Content Include="javascript\jquery\jquery.hoverIntent.js" />
+    <Content Include="javascript\jquery\jquery.js" />
+    <Content Include="javascript\jquery\jquery.metadata.js" />
+    <Content Include="javascript\jquery\jquery.TimePicker.js" />
+    <Content Include="javascript\jquery\jquery.tools.min.js" />
+    <Content Include="javascript\jquery\jquery.validate.js" />
+    <Content Include="javascript\jquery\jquery.validate.min.js" />
+    <Content Include="javascript\jquery\jqueryold.js" />
+    <Content Include="javascript\jquery\mbMenu.js" />
+    <Content Include="javascript\jquery\styleswitch.js" />
+    <Content Include="javascript\jquery\thickbox-compressed.js" />
+    <Content Include="javascript\jquery\thickbox.css" />
+    <Content Include="javascript\JScript.js" />
+    <Content Include="javascript\Login.js" />
+    <Content Include="javascript\Movements.js" />
+    <Content Include="javascript\PalletStatus.js" />
+    <Content Include="javascript\SchedulerReadOnlyPage.js" />
+    <Content Include="javascript\SchedulerReadOnlyCalendarIframe.js" />
+    <Content Include="javascript\GenericValidationManager.js" />
+    <Content Include="javascript\WarehousingClientSchedule.js" />
+    <Content Include="javascript\ScheduleActivities.js" />
+    <Content Include="javascript\SchedulerCalendarIframe.js" />
+    <Content Include="javascript\SchedulerPage.js" />
+    <Content Include="javascript\ScrollableGridPlugin.js" />
+    <Content Include="javascript\SecurityUsers.js" />
+    <Content Include="javascript\StockIn.js" />
+    <Content Include="javascript\StockInProcessing.js" />
+    <Content Include="javascript\StockOutWizard.js" />
+    <Content Include="javascript\Topups.js" />
+    <Content Include="javascript\User.js" />
+    <Content Include="javascript\V0001\ClientStockIn.js" />
+    <Content Include="javascript\V0001\StockOrderEdit.js" />
+    <Content Include="javascript\V0001\StockOut.js" />
+    <Content Include="javascript\V0008\StockOrder.js" />
+    <Content Include="javascript\WorkOrderTimeTracking.js" />
+    <Content Include="javascript\WorksOrderManagement.js" />
+    <Content Include="PalletStatus\ClientPalletStatusGridView.ascx" />
+    <Content Include="PalletStatus\ClientPalletStatusPage.aspx" />
+    <Content Include="PasswordReset.aspx" />
+    <Content Include="PasswordResetRequest.aspx" />
+    <Content Include="NOTapp_offline.htm" />
+    <Content Include="PalletStatus\PalletStatusByLocationPage.aspx" />
+    <Content Include="PerformanceManagement.html" />
+    <Content Include="ReleaseNotes.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Reports\DailyStockLevelesReport.aspx" />
+    <Content Include="Reports\CurrentStockReport.aspx" />
+    <Content Include="Reports\DistributionChargesReportPage.aspx" />
+    <Content Include="Reports\DistributionOrdersFulfilledReportPage.aspx" />
+    <Content Include="Reports\DistributionReturnsReportPage.aspx" />
+    <Content Include="Reports\DistributionWeeklyChargesReportPage.aspx" />
+    <Content Include="Reports\UsedSealsReport.aspx" />
+    <Content Include="Reports\WarehousingClientStockLevelsHistory.ascx" />
+    <Content Include="Scheduler\ScheduleActivitiesIframe.aspx" />
+    <Content Include="Scheduler\SchedulerReadOnlyCalendarIframe.aspx" />
+    <Content Include="Scheduler\SchedulerCalendarIframe.aspx" />
+    <Content Include="Scheduler\SchedulerReadOnlyPage.aspx" />
+    <Content Include="Scheduler\SchedulerPage.aspx" />
+    <Content Include="Schedules\Scheduler.aspx" />
+    <Content Include="Seals\AddSealsEditor.ascx" />
+    <Content Include="Seals\AddSealsGridView.ascx" />
+    <Content Include="Seals\AddSealsPage.aspx" />
+    <Content Include="StockIn\ContainerInBuildingUnitEditor.ascx" />
+    <Content Include="StockIn\StockInBulkEditor.ascx" />
+    <Content Include="StockIn\StockInCancelConfirmation.ascx" />
+    <Content Include="StockIn\StockInStage1.ascx" />
+    <Content Include="StockIn\StockInStage2.ascx" />
+    <Content Include="StockIn\StockInStage3.ascx" />
+    <Content Include="StockIn\StockInStage4.ascx" />
+    <Content Include="StockIn\StockInWorksOrderGridView.ascx" />
+    <Content Include="StockIn\StockInWorksOrderPallet.ascx" />
+    <Content Include="StockOut\StockOutCancelConfirmation.ascx" />
+    <Content Include="StockOut\StockOutHistory.ascx" />
+    <Content Include="StockOut\StockOutWizard.aspx" />
+    <Content Include="StockOut\StockOutWizardStage1.ascx" />
+    <Content Include="StockOut\StockOutWizardStage2.ascx" />
+    <Content Include="StockOut\StockOutWizardStage3.ascx" />
+    <Content Include="StockOut\StockOutWizardStage4.ascx" />
+    <Content Include="StockOut\StockOutWizardStage5.ascx" />
+    <Content Include="StockOut\StockOutWizardStage6.ascx" />
+    <Content Include="StockOut\StockOutWizardStage7.ascx" />
+    <Content Include="Stock\StockItemDeliveryStatusPage.aspx" />
+    <Content Include="Stock\StockItemEditorSimple.ascx" />
+    <Content Include="Manufacturers\Manufacturers.aspx" />
+    <Content Include="Manufacturers\ManufacturersGridView.ascx" />
+    <Content Include="Manufacturers\ManufacturerEditor.ascx" />
+    <Content Include="UptimeLogs\UptimeLogs.aspx" />
+    <Content Include="VersionHistory.aspx" />
+    <Content Include="images\accordionHeaderBackground.png" />
+    <Content Include="images\Administrator.png" />
+    <Content Include="images\ambulance.JPG" />
+    <Content Include="images\Ambulance2.png" />
+    <Content Include="images\AppSystem.png" />
+    <Content Include="images\Arrived.png" />
+    <Content Include="images\AutoPickPalletLocation.png" />
+    <Content Include="images\AutoPlaceRule.png" />
+    <Content Include="images\autotask.png" />
+    <Content Include="images\Banner.png" />
+    <Content Include="images\BannerLeftDistributionNas.png" />
+    <Content Include="images\BannerRepeatNas.png" />
+    <Content Include="images\bgnd_sel_1.jpg" />
+    <Content Include="images\bgnd_sel_2.jpg" />
+    <Content Include="images\bgnd_sel_3.jpg" />
+    <Content Include="images\bgnd_sel_4.png" />
+    <Content Include="images\BigButtonSpriteLeft.png" />
+    <Content Include="images\BigButtonSpriteMiddle.png" />
+    <Content Include="images\BigButtonSpriteRight.png" />
+    <Content Include="images\BlackObstructionTexture.jpg" />
+    <Content Include="images\box_menu_over.png" />
+    <Content Include="images\box_top.png" />
+    <Content Include="images\browser.png" />
+    <Content Include="images\Cancel.png" />
+    <Content Include="images\Close.png" />
+    <Content Include="images\CloseBig.png" />
+    <Content Include="images\Contact.gif" />
+    <Content Include="images\Continue.png" />
+    <Content Include="images\discrepency.png" />
+    <Content Include="images\down.png" />
+    <Content Include="images\Email.png" />
+    <Content Include="images\footerbg.jpg" />
+    <Content Include="images\footerBottom.png" />
+    <Content Include="images\GenerateBatch.png" />
+    <Content Include="images\gvPagerBackground.png" />
+    <Content Include="images\HandlingCharges.png" />
+    <Content Include="images\header_bgnd.jpg" />
+    <Content Include="images\HealthCheck.png" />
+    <Content Include="images\IgnoreDiscrepency.png" />
+    <Content Include="images\information.png" />
+    <Content Include="images\Integration.png" />
+    <Content Include="images\IntegrationEvent.png" />
+    <Content Include="images\IntegrationFailure.png" />
+    <Content Include="images\InvoiceBig.png" />
+    <Content Include="images\InvoiceCheckList.png" />
+    <Content Include="images\InvoiceQueuedForExport.png" />
+    <Content Include="images\Loaded.png" />
+    <Content Include="images\loadingTr.gif" />
+    <Content Include="images\LocationDrillDown.png" />
+    <Content Include="images\loginHeader.png" />
+    <Content Include="images\Logout.png" />
+    <Content Include="images\Manual.png" />
+    <Content Include="images\NudgeLeftBig.png" />
+    <Content Include="images\NudgeLeftSmall.png" />
+    <Content Include="images\NudgeRightBig.png" />
+    <Content Include="images\NudgeRightSmall.png" />
+    <Content Include="images\Obstruction.png" />
+    <Content Include="images\ObstructionTexture.jpg" />
+    <Content Include="images\On.png" />
+    <Content Include="images\PalletDamage.png" />
+    <Content Include="images\PalletHeight.png" />
+    <Content Include="images\PalletHistory.png" />
+    <Content Include="images\PalletIssues.png" />
+    <Content Include="images\PalletNew.png" />
+    <Content Include="images\PalletTexture.jpg" />
+    <Content Include="images\PalletTextureExisitingMovement.jpg" />
+    <Content Include="images\PalletTextureInbound.jpg" />
+    <Content Include="images\PalletTextureOutbound.jpg" />
+    <Content Include="images\PalletTextureSelectable.jpg" />
+    <Content Include="images\PalletTextureSelected.jpg" />
+    <Content Include="images\permissions.png" />
+    <Content Include="images\printBarcode.png" />
+    <Content Include="images\Reconcile.png" />
+    <Content Include="images\ReconcileDiscrepency.png" />
+    <Content Include="images\RecurringCharges.png" />
+    <Content Include="images\ReportBig.png" />
+    <Content Include="images\reportbtn.png" />
+    <Content Include="images\ReportDiscrepency.png" />
+    <Content Include="images\revert.png" />
+    <Content Include="images\rightShadow.png" />
+    <Content Include="images\ScheduleEntry.png" />
+    <Content Include="images\Screwdriver.png" />
+    <Content Include="images\search.png" />
+    <Content Include="images\Seperator.png" />
+    <Content Include="images\SplitPalletConfirm.png" />
+    <Content Include="images\StockDiscrepency.png" />
+    <Content Include="images\StockHistoryBig.png" />
+    <Content Include="images\StockInBig.png" />
+    <Content Include="images\StockInRules.png" />
+    <Content Include="images\StockOrderBig.png" />
+    <Content Include="images\StockOrderCancelIssue.png" />
+    <Content Include="images\StockTransfer.png" />
+    <Content Include="images\StockTransferAll.png" />
+    <Content Include="images\StockTransferNew.png" />
+    <Content Include="images\StoreAllPromise.png" />
+    <Content Include="images\StoreAllTruck.png" />
+    <Content Include="images\Support.png" />
+    <Content Include="images\thirdparty.png" />
+    <Content Include="images\TopupPallet.png" />
+    <Content Include="images\TransparentPalletInfo.jpg" />
+    <Content Include="images\TransparentPalletInfo.png" />
+    <Content Include="images\UnitCost.png" />
+    <Content Include="images\Unload.png" />
+    <Content Include="images\UnResolve.png" />
+    <Content Include="images\up.png" />
+    <Content Include="images\Upload.png" />
+    <Content Include="images\VATRate.png" />
+    <Content Include="images\Version.png" />
+    <Content Include="images\WarehouseMachine.png" />
+    <Content Include="images\WarehouseMachineBig.png" />
+    <Content Include="images\WarehousingClient.png" />
+    <Content Include="images\WorksOrderStandBy.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="WarehousingClient\ClientShopBasketWithImages.ascx" />
+    <Content Include="WarehousingClient\ClientShopByBatch.ascx" />
+    <Content Include="WarehousingClient\ClientShopGrid.ascx" />
+    <Content Include="WarehousingClient\ClientShopOrderDetails.ascx" />
+    <Content Include="WarehousingClient\ClientShopBasket.ascx" />
+    <Content Include="WarehousingClient\ClientStockOrderPage.aspx" />
+    <Content Include="WarehousingClient\ClientStockOrderPrintPage.aspx" />
+    <Content Include="WarehousingClient\ClientStockOrderShop.aspx" />
+    <Content Include="WarehousingClient\ClientStockOutPage.aspx" />
+    <Content Include="WarehousingClient\ClientSchedulerPage.aspx" />
+    <Content Include="WarehousingClient\ClientStockOutPending.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="WorksOrders\ActiveReports.FlashViewer.Resources.swf" />
+    <Content Include="WorksOrders\ActiveReports.FlashViewer.swf" />
+    <Content Include="WorksOrders\AdhocWorksOrderEditor.ascx" />
+    <Content Include="WorksOrders\DivisionCountryRulesGridView.ascx" />
+    <Content Include="WorksOrders\DivisionOnlyCountryRulesGridView.ascx" />
+    <Content Include="WorksOrders\DivisionOnlyWorksOrderCountryRuleEditor.ascx" />
+    <Content Include="WorksOrders\DivisionWorkOrderEditor.ascx" />
+    <Content Include="WorksOrders\DivisionWorkOrderRuleGridView.ascx" />
+    <Content Include="WorksOrders\DivisionWorksOrderCountryRuleEditor.ascx" />
+    <Content Include="WorksOrders\Grapecity.ActiveReports.Flash.v11.Resources.swf" />
+    <Content Include="WorksOrders\Grapecity.ActiveReports.Flash.v11.swf" />
+    <Content Include="WorksOrders\StockItemCountryRuleEditor.ascx" />
+    <Content Include="WorksOrders\StockItemCountryRulesGridView.ascx" />
+    <Content Include="WorksOrders\StockItemWorksOrderRuleEditor.ascx" />
+    <Content Include="WorksOrders\StockItemWorksOrderRulesGridView.ascx" />
+    <Content Include="WorksOrders\WorksOrderDetail.aspx" />
+    <Content Include="WorksOrders\WorksOrderManagement.aspx" />
+    <Content Include="WorksOrders\WorksOrderRuleManagement.aspx" />
+    <Content Include="WorksOrders\WorksOrderTimeBreakdownGridView.ascx" />
+    <Content Include="WorksOrders\WorksOrderTimeTrackingDetail.aspx" />
+    <Content Include="WorksOrders\WorksOrderTotalTimeGridView.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllergenCode\AllergenCode.aspx.cs">
+      <DependentUpon>AllergenCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllergenCode\AllergenCode.aspx.designer.cs">
+      <DependentUpon>AllergenCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllergenCode\AllergenCodeEditor.ascx.cs">
+      <DependentUpon>AllergenCodeEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllergenCode\AllergenCodeEditor.ascx.designer.cs">
+      <DependentUpon>AllergenCodeEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AllergenCode\AllergenCodeGridView.ascx.cs">
+      <DependentUpon>AllergenCodeGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllergenCode\AllergenCodeGridView.ascx.designer.cs">
+      <DependentUpon>AllergenCodeGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AllergenCode\AllergenCodeReport.aspx.cs">
+      <DependentUpon>AllergenCodeReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllergenCode\AllergenCodeReport.aspx.designer.cs">
+      <DependentUpon>AllergenCodeReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllergenCode\AssignAllergenCode.aspx.cs">
+      <DependentUpon>AssignAllergenCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllergenCode\AssignAllergenCode.aspx.designer.cs">
+      <DependentUpon>AssignAllergenCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitLoadingBayStatus.aspx.cs">
+      <DependentUpon>BuildingUnitLoadingBayStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitLoadingBayStatus.aspx.designer.cs">
+      <DependentUpon>BuildingUnitLoadingBayStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\ManageBuildingUnitRowLoadingBays.aspx.cs">
+      <DependentUpon>ManageBuildingUnitRowLoadingBays.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\ManageBuildingUnitRowLoadingBays.aspx.designer.cs">
+      <DependentUpon>ManageBuildingUnitRowLoadingBays.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\CustomerEditor.ascx.cs">
+      <DependentUpon>CustomerEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\CustomerEditor.ascx.designer.cs">
+      <DependentUpon>CustomerEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\CustomersGridView.ascx.cs">
+      <DependentUpon>CustomersGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\CustomersGridView.ascx.designer.cs">
+      <DependentUpon>CustomersGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyInventory\DailyReports.aspx.cs">
+      <DependentUpon>DailyReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyInventory\DailyReports.aspx.designer.cs">
+      <DependentUpon>DailyReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyInventory\PalletMovementsPage.aspx.cs">
+      <DependentUpon>PalletMovementsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyInventory\PalletMovementsPage.aspx.designer.cs">
+      <DependentUpon>PalletMovementsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyInventory\DailyChecksPage.aspx.cs">
+      <DependentUpon>DailyChecksPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyInventory\DailyChecksPage.aspx.designer.cs">
+      <DependentUpon>DailyChecksPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyInventory\DailyDocketPrintPage.aspx.cs">
+      <DependentUpon>DailyDocketPrintPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyInventory\DailyDocketPrintPage.aspx.designer.cs">
+      <DependentUpon>DailyDocketPrintPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyInventory\StockOutLineEdit.ascx.cs">
+      <DependentUpon>StockOutLineEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyInventory\StockOutLineEdit.ascx.designer.cs">
+      <DependentUpon>StockOutLineEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyInventory\StockInLineEdit.ascx.cs">
+      <DependentUpon>StockInLineEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyInventory\StockInLineEdit.ascx.designer.cs">
+      <DependentUpon>StockInLineEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyInventory\StockOutDailyPage.aspx.cs">
+      <DependentUpon>StockOutDailyPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyInventory\StockOutDailyPage.aspx.designer.cs">
+      <DependentUpon>StockOutDailyPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyInventory\StockInDailyPage.aspx.cs">
+      <DependentUpon>StockInDailyPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyInventory\StockInDailyPage.aspx.designer.cs">
+      <DependentUpon>StockInDailyPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyInventory\StockOutsHistoryPage.aspx.cs">
+      <DependentUpon>StockOutsHistoryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyInventory\StockOutsHistoryPage.aspx.designer.cs">
+      <DependentUpon>StockOutsHistoryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DailyInventory\StockInsHistoryPage.aspx.cs">
+      <DependentUpon>StockInsHistoryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DailyInventory\StockInsHistoryPage.aspx.designer.cs">
+      <DependentUpon>StockInsHistoryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Distribution\DistributionDeliveryMethodEditor.ascx.cs">
+      <DependentUpon>DistributionDeliveryMethodEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Distribution\DistributionDeliveryMethodEditor.ascx.designer.cs">
+      <DependentUpon>DistributionDeliveryMethodEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Distribution\DistributionDeliveryMethods.aspx.cs">
+      <DependentUpon>DistributionDeliveryMethods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Distribution\DistributionDeliveryMethods.aspx.designer.cs">
+      <DependentUpon>DistributionDeliveryMethods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Distribution\DistributionOrderChargeEditor.ascx.cs">
+      <DependentUpon>DistributionOrderChargeEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Distribution\DistributionOrderChargeEditor.ascx.designer.cs">
+      <DependentUpon>DistributionOrderChargeEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Distribution\DistributionOrderCharges.aspx.cs">
+      <DependentUpon>DistributionOrderCharges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Distribution\DistributionOrderCharges.aspx.designer.cs">
+      <DependentUpon>DistributionOrderCharges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Distribution\DistributionOrderProcessing.aspx.cs">
+      <DependentUpon>DistributionOrderProcessing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Distribution\DistributionOrderProcessing.aspx.designer.cs">
+      <DependentUpon>DistributionOrderProcessing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Distribution\DistributionOrdersListing.ascx.cs">
+      <DependentUpon>DistributionOrdersListing.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Distribution\DistributionOrdersListing.ascx.designer.cs">
+      <DependentUpon>DistributionOrdersListing.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Distribution\DistributionPackageChargeEditor.ascx.cs">
+      <DependentUpon>DistributionPackageChargeEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Distribution\DistributionPackageChargeEditor.ascx.designer.cs">
+      <DependentUpon>DistributionPackageChargeEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Distribution\DistributionPackagingCharges.aspx.cs">
+      <DependentUpon>DistributionPackagingCharges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Distribution\DistributionPackagingCharges.aspx.designer.cs">
+      <DependentUpon>DistributionPackagingCharges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Distribution\DistributionShippingChargeEditor.ascx.cs">
+      <DependentUpon>DistributionShippingChargeEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Distribution\DistributionShippingChargeEditor.ascx.designer.cs">
+      <DependentUpon>DistributionShippingChargeEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Distribution\DistributionShippingCharges.aspx.cs">
+      <DependentUpon>DistributionShippingCharges.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Distribution\DistributionShippingCharges.aspx.designer.cs">
+      <DependentUpon>DistributionShippingCharges.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Distribution\DistributionStockOutLineEdit.ascx.cs">
+      <DependentUpon>DistributionStockOutLineEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Distribution\DistributionStockOutLineEdit.ascx.designer.cs">
+      <DependentUpon>DistributionStockOutLineEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeActivity\EmployeeActivity.aspx.cs">
+      <DependentUpon>EmployeeActivity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeActivity\EmployeeActivity.aspx.designer.cs">
+      <DependentUpon>EmployeeActivity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error\ClientErrorHandler.aspx.cs">
+      <DependentUpon>ClientErrorHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error\ClientErrorHandler.aspx.designer.cs">
+      <DependentUpon>ClientErrorHandler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error\DailyInventoryErrorHandler.aspx.cs">
+      <DependentUpon>DailyInventoryErrorHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error\DailyInventoryErrorHandler.aspx.designer.cs">
+      <DependentUpon>DailyInventoryErrorHandler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error\DistributionErrorHandler.aspx.cs">
+      <DependentUpon>DistributionErrorHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error\DistributionErrorHandler.aspx.designer.cs">
+      <DependentUpon>DistributionErrorHandler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraServices\DistributionExtraServiceEditor.ascx.cs">
+      <DependentUpon>DistributionExtraServiceEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraServices\DistributionExtraServiceEditor.ascx.designer.cs">
+      <DependentUpon>DistributionExtraServiceEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GroupedStockIns\GroupStockIn.aspx.cs">
+      <DependentUpon>GroupStockIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupedStockIns\GroupStockIn.aspx.designer.cs">
+      <DependentUpon>GroupStockIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupedStockIns\GroupStockInArrivedControl.ascx.cs">
+      <DependentUpon>GroupStockInArrivedControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupedStockIns\GroupStockInArrivedControl.ascx.designer.cs">
+      <DependentUpon>GroupStockInArrivedControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupedStockIns\GroupStockInCancel.ascx.cs">
+      <DependentUpon>GroupStockInCancel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupedStockIns\GroupStockInCancel.ascx.designer.cs">
+      <DependentUpon>GroupStockInCancel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupedStockIns\GroupStockInLine.ascx.cs">
+      <DependentUpon>GroupStockInLine.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupedStockIns\GroupStockInLine.ascx.designer.cs">
+      <DependentUpon>GroupStockInLine.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupedStockIns\GroupStockInStage1.ascx.cs">
+      <DependentUpon>GroupStockInStage1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupedStockIns\GroupStockInStage1.ascx.designer.cs">
+      <DependentUpon>GroupStockInStage1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupedStockIns\GroupStockInStage2.ascx.cs">
+      <DependentUpon>GroupStockInStage2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupedStockIns\GroupStockInStage2.ascx.designer.cs">
+      <DependentUpon>GroupStockInStage2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupedStockIns\GroupStockInStage3.ascx.cs">
+      <DependentUpon>GroupStockInStage3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupedStockIns\GroupStockInStage3.ascx.designer.cs">
+      <DependentUpon>GroupStockInStage3.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="GroupedStockIns\GroupStockInStage4.ascx.cs">
+      <DependentUpon>GroupStockInStage4.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GroupedStockIns\GroupStockInStage4.ascx.designer.cs">
+      <DependentUpon>GroupStockInStage4.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\SchedulerAjaxHandler.ashx.cs">
+      <DependentUpon>SchedulerAjaxHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\DailyInventoryHome.aspx.cs">
+      <DependentUpon>DailyInventoryHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\DailyInventoryHome.aspx.designer.cs">
+      <DependentUpon>DailyInventoryHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\DistributionHome.aspx.cs">
+      <DependentUpon>DistributionHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\DistributionHome.aspx.designer.cs">
+      <DependentUpon>DistributionHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\WarehouseOpHomeView.ascx.cs">
+      <DependentUpon>WarehouseOpHomeView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\WarehouseOpHomeView.ascx.designer.cs">
+      <DependentUpon>WarehouseOpHomeView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Integration\IntegrationFileReprocess.aspx.cs">
+      <DependentUpon>IntegrationFileReprocess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Integration\IntegrationFileReprocess.aspx.designer.cs">
+      <DependentUpon>IntegrationFileReprocess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Integration\IntegrationFileReprocessGridView.ascx.cs">
+      <DependentUpon>IntegrationFileReprocessGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Integration\IntegrationFileReprocessGridView.ascx.designer.cs">
+      <DependentUpon>IntegrationFileReprocessGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\ClientInvoiceGridView.ascx.cs">
+      <DependentUpon>ClientInvoiceGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\ClientInvoiceGridView.ascx.designer.cs">
+      <DependentUpon>ClientInvoiceGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\ClientInvoicePage.aspx.cs">
+      <DependentUpon>ClientInvoicePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\ClientInvoicePage.aspx.designer.cs">
+      <DependentUpon>ClientInvoicePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\MasterBlank.Master.cs">
+      <DependentUpon>MasterBlank.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\MasterBlank.Master.designer.cs">
+      <DependentUpon>MasterBlank.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\MasterDistribution.Master.cs">
+      <DependentUpon>MasterDistribution.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\MasterDistribution.Master.designer.cs">
+      <DependentUpon>MasterDistribution.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PalletStatus\ClientPalletStatusGridView.ascx.cs">
+      <DependentUpon>ClientPalletStatusGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PalletStatus\ClientPalletStatusGridView.ascx.designer.cs">
+      <DependentUpon>ClientPalletStatusGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PalletStatus\ClientPalletStatusPage.aspx.cs">
+      <DependentUpon>ClientPalletStatusPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PalletStatus\ClientPalletStatusPage.aspx.designer.cs">
+      <DependentUpon>ClientPalletStatusPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordReset.aspx.cs">
+      <DependentUpon>PasswordReset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasswordReset.aspx.designer.cs">
+      <DependentUpon>PasswordReset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordResetRequest.aspx.cs">
+      <DependentUpon>PasswordResetRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasswordResetRequest.aspx.designer.cs">
+      <DependentUpon>PasswordResetRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\MasterDailyInventory.Master.cs">
+      <DependentUpon>MasterDailyInventory.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\MasterDailyInventory.Master.designer.cs">
+      <DependentUpon>MasterDailyInventory.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PalletStatus\PalletStatusByLocationPage.aspx.cs">
+      <DependentUpon>PalletStatusByLocationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PalletStatus\PalletStatusByLocationPage.aspx.designer.cs">
+      <DependentUpon>PalletStatusByLocationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DailyStockLevelesReport.aspx.cs">
+      <DependentUpon>DailyStockLevelesReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\DailyStockLevelesReport.aspx.designer.cs">
+      <DependentUpon>DailyStockLevelesReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\CurrentStockReport.aspx.cs">
+      <DependentUpon>CurrentStockReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\CurrentStockReport.aspx.designer.cs">
+      <DependentUpon>CurrentStockReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DistributionChargesReportPage.aspx.cs">
+      <DependentUpon>DistributionChargesReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\DistributionChargesReportPage.aspx.designer.cs">
+      <DependentUpon>DistributionChargesReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DistributionOrdersFulfilledReportPage.aspx.cs">
+      <DependentUpon>DistributionOrdersFulfilledReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\DistributionOrdersFulfilledReportPage.aspx.designer.cs">
+      <DependentUpon>DistributionOrdersFulfilledReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DistributionReturnsReportPage.aspx.cs">
+      <DependentUpon>DistributionReturnsReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\DistributionReturnsReportPage.aspx.designer.cs">
+      <DependentUpon>DistributionReturnsReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DistributionWeeklyChargesReportPage.aspx.cs">
+      <DependentUpon>DistributionWeeklyChargesReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\DistributionWeeklyChargesReportPage.aspx.designer.cs">
+      <DependentUpon>DistributionWeeklyChargesReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\UsedSealsReport.aspx.cs">
+      <DependentUpon>UsedSealsReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\UsedSealsReport.aspx.designer.cs">
+      <DependentUpon>UsedSealsReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\WarehousingClientStockLevelsHistory.ascx.cs">
+      <DependentUpon>WarehousingClientStockLevelsHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\WarehousingClientStockLevelsHistory.ascx.designer.cs">
+      <DependentUpon>WarehousingClientStockLevelsHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduler\ScheduleActivitiesIframe.aspx.cs">
+      <DependentUpon>ScheduleActivitiesIframe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scheduler\ScheduleActivitiesIframe.aspx.designer.cs">
+      <DependentUpon>ScheduleActivitiesIframe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduler\SchedulerReadOnlyCalendarIframe.aspx.cs">
+      <DependentUpon>SchedulerReadOnlyCalendarIframe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scheduler\SchedulerReadOnlyCalendarIframe.aspx.designer.cs">
+      <DependentUpon>SchedulerReadOnlyCalendarIframe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduler\SchedulerCalendarIframe.aspx.cs">
+      <DependentUpon>SchedulerCalendarIframe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scheduler\SchedulerCalendarIframe.aspx.designer.cs">
+      <DependentUpon>SchedulerCalendarIframe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduler\SchedulerReadOnlyPage.aspx.cs">
+      <DependentUpon>SchedulerReadOnlyPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scheduler\SchedulerReadOnlyPage.aspx.designer.cs">
+      <DependentUpon>SchedulerReadOnlyPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduler\SchedulerPage.aspx.cs">
+      <DependentUpon>SchedulerPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scheduler\SchedulerPage.aspx.designer.cs">
+      <DependentUpon>SchedulerPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Schedules\Scheduler.aspx.cs">
+      <DependentUpon>Scheduler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Schedules\Scheduler.aspx.designer.cs">
+      <DependentUpon>Scheduler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Seals\AddSealsEditor.ascx.cs">
+      <DependentUpon>AddSealsEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seals\AddSealsEditor.ascx.designer.cs">
+      <DependentUpon>AddSealsEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Seals\AddSealsGridView.ascx.cs">
+      <DependentUpon>AddSealsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seals\AddSealsGridView.ascx.designer.cs">
+      <DependentUpon>AddSealsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Seals\AddSealsPage.aspx.cs">
+      <DependentUpon>AddSealsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Seals\AddSealsPage.aspx.designer.cs">
+      <DependentUpon>AddSealsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\ContainerInBuildingUnitEditor.ascx.cs">
+      <DependentUpon>ContainerInBuildingUnitEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\ContainerInBuildingUnitEditor.ascx.designer.cs">
+      <DependentUpon>ContainerInBuildingUnitEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInBulkEditor.ascx.cs">
+      <DependentUpon>StockInBulkEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInBulkEditor.ascx.designer.cs">
+      <DependentUpon>StockInBulkEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInCancelConfirmation.ascx.cs">
+      <DependentUpon>StockInCancelConfirmation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInCancelConfirmation.ascx.designer.cs">
+      <DependentUpon>StockInCancelConfirmation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInStage1.ascx.cs">
+      <DependentUpon>StockInStage1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInStage1.ascx.designer.cs">
+      <DependentUpon>StockInStage1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInStage2.ascx.cs">
+      <DependentUpon>StockInStage2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInStage2.ascx.designer.cs">
+      <DependentUpon>StockInStage2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInStage3.ascx.cs">
+      <DependentUpon>StockInStage3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInStage3.ascx.designer.cs">
+      <DependentUpon>StockInStage3.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInStage4.ascx.cs">
+      <DependentUpon>StockInStage4.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInStage4.ascx.designer.cs">
+      <DependentUpon>StockInStage4.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInWorksOrderGridView.ascx.cs">
+      <DependentUpon>StockInWorksOrderGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInWorksOrderGridView.ascx.designer.cs">
+      <DependentUpon>StockInWorksOrderGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInWorksOrderPallet.ascx.cs">
+      <DependentUpon>StockInWorksOrderPallet.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInWorksOrderPallet.ascx.designer.cs">
+      <DependentUpon>StockInWorksOrderPallet.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\StockOutCancelConfirmation.ascx.cs">
+      <DependentUpon>StockOutCancelConfirmation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockOut\StockOutCancelConfirmation.ascx.designer.cs">
+      <DependentUpon>StockOutCancelConfirmation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\StockOutHistory.ascx.cs">
+      <DependentUpon>StockOutHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockOut\StockOutHistory.ascx.designer.cs">
+      <DependentUpon>StockOutHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\StockOutWizard.aspx.cs">
+      <DependentUpon>StockOutWizard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockOut\StockOutWizard.aspx.designer.cs">
+      <DependentUpon>StockOutWizard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\StockOutWizardStage1.ascx.cs">
+      <DependentUpon>StockOutWizardStage1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockOut\StockOutWizardStage1.ascx.designer.cs">
+      <DependentUpon>StockOutWizardStage1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\StockOutWizardStage2.ascx.cs">
+      <DependentUpon>StockOutWizardStage2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockOut\StockOutWizardStage2.ascx.designer.cs">
+      <DependentUpon>StockOutWizardStage2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\StockOutWizardStage3.ascx.cs">
+      <DependentUpon>StockOutWizardStage3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockOut\StockOutWizardStage3.ascx.designer.cs">
+      <DependentUpon>StockOutWizardStage3.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\StockOutWizardStage4.ascx.cs">
+      <DependentUpon>StockOutWizardStage4.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockOut\StockOutWizardStage4.ascx.designer.cs">
+      <DependentUpon>StockOutWizardStage4.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\StockOutWizardStage5.ascx.cs">
+      <DependentUpon>StockOutWizardStage5.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockOut\StockOutWizardStage5.ascx.designer.cs">
+      <DependentUpon>StockOutWizardStage5.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\StockOutWizardStage6.ascx.cs">
+      <DependentUpon>StockOutWizardStage6.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockOut\StockOutWizardStage6.ascx.designer.cs">
+      <DependentUpon>StockOutWizardStage6.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockOut\StockOutWizardStage7.ascx.cs">
+      <DependentUpon>StockOutWizardStage7.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockOut\StockOutWizardStage7.ascx.designer.cs">
+      <DependentUpon>StockOutWizardStage7.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemDeliveryStatusPage.aspx.cs">
+      <DependentUpon>StockItemDeliveryStatusPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemDeliveryStatusPage.aspx.designer.cs">
+      <DependentUpon>StockItemDeliveryStatusPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemEditorSimple.ascx.cs">
+      <DependentUpon>StockItemEditorSimple.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemEditorSimple.ascx.designer.cs">
+      <DependentUpon>StockItemEditorSimple.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturers\Manufacturers.aspx.cs">
+      <DependentUpon>Manufacturers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manufacturers\Manufacturers.aspx.designer.cs">
+      <DependentUpon>Manufacturers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturers\ManufacturersGridView.ascx.cs">
+      <DependentUpon>ManufacturersGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manufacturers\ManufacturersGridView.ascx.designer.cs">
+      <DependentUpon>ManufacturersGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Manufacturers\ManufacturerEditor.ascx.cs">
+      <DependentUpon>ManufacturerEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Manufacturers\ManufacturerEditor.ascx.designer.cs">
+      <DependentUpon>ManufacturerEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UptimeLogs\UptimeLogs.aspx.cs">
+      <DependentUpon>UptimeLogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UptimeLogs\UptimeLogs.aspx.designer.cs">
+      <DependentUpon>UptimeLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VersionHistory.aspx.cs">
+      <DependentUpon>VersionHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VersionHistory.aspx.designer.cs">
+      <DependentUpon>VersionHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\HiContentClientMaster.Master.cs">
+      <DependentUpon>HiContentClientMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\HiContentClientMaster.Master.designer.cs">
+      <DependentUpon>HiContentClientMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.ashx.cs">
+      <DependentUpon>Menu.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="STAContainer.aspx.cs">
+      <DependentUpon>STAContainer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="STAContainer.aspx.designer.cs">
+      <DependentUpon>STAContainer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAListPicker.ascx.cs">
+      <DependentUpon>STAListPicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="STAListPicker.ascx.designer.cs">
+      <DependentUpon>STAListPicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientShopBasketWithImages.ascx.cs">
+      <DependentUpon>ClientShopBasketWithImages.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientShopBasketWithImages.ascx.designer.cs">
+      <DependentUpon>ClientShopBasketWithImages.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientShopByBatch.ascx.cs">
+      <DependentUpon>ClientShopByBatch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientShopByBatch.ascx.designer.cs">
+      <DependentUpon>ClientShopByBatch.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientShopOrderDetails.ascx.cs">
+      <DependentUpon>ClientShopOrderDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientShopOrderDetails.ascx.designer.cs">
+      <DependentUpon>ClientShopOrderDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientShopBasket.ascx.cs">
+      <DependentUpon>ClientShopBasket.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientShopBasket.ascx.designer.cs">
+      <DependentUpon>ClientShopBasket.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientShopGrid.ascx.cs">
+      <DependentUpon>ClientShopGrid.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientShopGrid.ascx.designer.cs">
+      <DependentUpon>ClientShopGrid.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientStockOrderPage.aspx.cs">
+      <DependentUpon>ClientStockOrderPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientStockOrderPage.aspx.designer.cs">
+      <DependentUpon>ClientStockOrderPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientStockOrderPrintPage.aspx.cs">
+      <DependentUpon>ClientStockOrderPrintPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientStockOrderPrintPage.aspx.designer.cs">
+      <DependentUpon>ClientStockOrderPrintPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientStockOrderShop.aspx.cs">
+      <DependentUpon>ClientStockOrderShop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientStockOrderShop.aspx.designer.cs">
+      <DependentUpon>ClientStockOrderShop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientStockOutPage.aspx.cs">
+      <DependentUpon>ClientStockOutPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientStockOutPage.aspx.designer.cs">
+      <DependentUpon>ClientStockOutPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientSchedulerPage.aspx.cs">
+      <DependentUpon>ClientSchedulerPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientSchedulerPage.aspx.designer.cs">
+      <DependentUpon>ClientSchedulerPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientStockOutPending.ascx.cs">
+      <DependentUpon>ClientStockOutPending.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientStockOutPending.ascx.designer.cs">
+      <DependentUpon>ClientStockOutPending.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\AdhocWorksOrderEditor.ascx.cs">
+      <DependentUpon>AdhocWorksOrderEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\AdhocWorksOrderEditor.ascx.designer.cs">
+      <DependentUpon>AdhocWorksOrderEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\DivisionCountryRulesGridView.ascx.cs">
+      <DependentUpon>DivisionCountryRulesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\DivisionCountryRulesGridView.ascx.designer.cs">
+      <DependentUpon>DivisionCountryRulesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\DivisionOnlyCountryRulesGridView.ascx.cs">
+      <DependentUpon>DivisionOnlyCountryRulesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\DivisionOnlyCountryRulesGridView.ascx.designer.cs">
+      <DependentUpon>DivisionOnlyCountryRulesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\DivisionOnlyWorksOrderCountryRuleEditor.ascx.cs">
+      <DependentUpon>DivisionOnlyWorksOrderCountryRuleEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\DivisionOnlyWorksOrderCountryRuleEditor.ascx.designer.cs">
+      <DependentUpon>DivisionOnlyWorksOrderCountryRuleEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\DivisionWorkOrderEditor.ascx.cs">
+      <DependentUpon>DivisionWorkOrderEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\DivisionWorkOrderEditor.ascx.designer.cs">
+      <DependentUpon>DivisionWorkOrderEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\DivisionWorkOrderRuleGridView.ascx.cs">
+      <DependentUpon>DivisionWorkOrderRuleGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\DivisionWorkOrderRuleGridView.ascx.designer.cs">
+      <DependentUpon>DivisionWorkOrderRuleGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\DivisionWorksOrderCountryRuleEditor.ascx.cs">
+      <DependentUpon>DivisionWorksOrderCountryRuleEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\DivisionWorksOrderCountryRuleEditor.ascx.designer.cs">
+      <DependentUpon>DivisionWorksOrderCountryRuleEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\StockItemCountryRuleEditor.ascx.cs">
+      <DependentUpon>StockItemCountryRuleEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\StockItemCountryRuleEditor.ascx.designer.cs">
+      <DependentUpon>StockItemCountryRuleEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\StockItemCountryRulesGridView.ascx.cs">
+      <DependentUpon>StockItemCountryRulesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\StockItemCountryRulesGridView.ascx.designer.cs">
+      <DependentUpon>StockItemCountryRulesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\StockItemWorksOrderRuleEditor.ascx.cs">
+      <DependentUpon>StockItemWorksOrderRuleEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\StockItemWorksOrderRuleEditor.ascx.designer.cs">
+      <DependentUpon>StockItemWorksOrderRuleEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\StockItemWorksOrderRulesGridView.ascx.cs">
+      <DependentUpon>StockItemWorksOrderRulesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\StockItemWorksOrderRulesGridView.ascx.designer.cs">
+      <DependentUpon>StockItemWorksOrderRulesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\WorksOrderDetail.aspx.cs">
+      <DependentUpon>WorksOrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\WorksOrderDetail.aspx.designer.cs">
+      <DependentUpon>WorksOrderDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\WorksOrderManagement.aspx.cs">
+      <DependentUpon>WorksOrderManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\WorksOrderManagement.aspx.designer.cs">
+      <DependentUpon>WorksOrderManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\WorksOrderRuleManagement.aspx.cs">
+      <DependentUpon>WorksOrderRuleManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\WorksOrderRuleManagement.aspx.designer.cs">
+      <DependentUpon>WorksOrderRuleManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\WorksOrderTimeBreakdownGridView.ascx.cs">
+      <DependentUpon>WorksOrderTimeBreakdownGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\WorksOrderTimeBreakdownGridView.ascx.designer.cs">
+      <DependentUpon>WorksOrderTimeBreakdownGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\WorksOrderTimeTrackingDetail.aspx.cs">
+      <DependentUpon>WorksOrderTimeTrackingDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\WorksOrderTimeTrackingDetail.aspx.designer.cs">
+      <DependentUpon>WorksOrderTimeTrackingDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorksOrders\WorksOrderTotalTimeGridView.ascx.cs">
+      <DependentUpon>WorksOrderTotalTimeGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorksOrders\WorksOrderTotalTimeGridView.ascx.designer.cs">
+      <DependentUpon>WorksOrderTotalTimeGridView.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\Framework.css" />
+    <Content Include="css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Customers\CustomerEditor.ascx" />
+    <Content Include="Customers\CustomersGridView.ascx" />
+    <Content Include="Global.asax" />
+    <Content Include="Home\Home.aspx" />
+    <Content Include="images\bmid_029.gif" />
+    <Content Include="images\Calendar.png" />
+    <Content Include="images\Customer.png" />
+    <Content Include="images\Customer24.png" />
+    <Content Include="images\edit.png" />
+    <Content Include="images\gridtitile.gif" />
+    <Content Include="images\gvHeaderBackground.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\new.png" />
+    <Content Include="images\SALogo.png" />
+    <Content Include="images\SALogoMed.png" />
+    <Content Include="images\save.png" />
+    <Content Include="STAContainer.aspx" />
+    <Content Include="STAListPicker.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AutoPick\AutoPickRuleEditor.ascx" />
+    <Content Include="AutoPick\AutoPickRulesGridView.ascx" />
+    <Content Include="AutoPlace\AutoPlaceRuleEditor.ascx" />
+    <Content Include="AutoPlace\AutoPlaceRulesGridView.ascx" />
+    <Content Include="AutoPlace\CustomerAutoPlaceRulesPage.aspx" />
+    <Content Include="AutoPlace\CustomersAutoPlaceGridView.ascx" />
+    <Content Include="AutoPlace\DivisionAutoPlaceRulesPage.aspx" />
+    <Content Include="AutoPlace\DivisionsAutoPlaceGridView.ascx" />
+    <Content Include="AutoPlace\StockAutoPlaceGridView.ascx" />
+    <Content Include="AutoPlace\StockAutoPlaceRulesPage.aspx" />
+    <Content Include="Barcoding\BarcodingPage.aspx" />
+    <Content Include="Buildings\BuildingEditor.ascx" />
+    <Content Include="Buildings\BuildingsGridView.ascx" />
+    <Content Include="Buildings\Buildings.aspx" />
+    <Content Include="Buildings\BuildingUnitFloorLocations.aspx" />
+    <Content Include="Buildings\BuildingUnits.aspx" />
+    <Content Include="Buildings\BuildingUnitSampleLocations.aspx" />
+    <Content Include="Buildings\BuildingUnitsGridView.ascx" />
+    <Content Include="Buildings\BuildingUnitEditor.ascx" />
+    <Content Include="Buildings\BuildingUnitSetDownAreas.aspx" />
+    <Content Include="Buildings\BuildingUnitMap.aspx" />
+    <Content Include="Buildings\BuildingUnitLoadingBays.aspx" />
+    <Content Include="Buildings\BuildingUnitSetDownAreasAssignedGridView.ascx" />
+    <Content Include="Buildings\BuildingUnitSetDownAreasAvailableGridView.ascx" />
+    <Content Include="AutoPick\CustomersAutoPickGridView.ascx" />
+    <Content Include="AutoPick\DivisionsAutoPickGridView.ascx" />
+    <Content Include="AutoPick\CustomerAutoPickRulesPage.aspx" />
+    <Content Include="AutoPick\DivisionAutoPickRulesPage.aspx" />
+    <Content Include="Buildings\BuildingUnitBayObstructionsPage.aspx" />
+    <Content Include="Buildings\BuildingUnitBayObstructionGridView.ascx" />
+    <Content Include="Buildings\BuildingUnitBayObstructionEditor.ascx" />
+    <Content Include="Buildings\BuildingUnitScrapLocationsPage.aspx" />
+    <Content Include="Buildings\BuildingUnitUsersPage.aspx" />
+    <Content Include="Buildings\BuildingUnitUsersGridView.ascx" />
+    <Content Include="Buildings\FloorLocationEditor.ascx" />
+    <Content Include="Buildings\FloorLocationsGridView.ascx" />
+    <Content Include="Buildings\SampleLocationEditor.ascx" />
+    <Content Include="Buildings\SampleLocationsGridView.ascx" />
+    <Content Include="css\ClientLogin.css" />
+    <Content Include="DeliveryAddresses\DivisionDeliveryAddressesPage.aspx" />
+    <Content Include="Error\ErrorHandler.aspx" />
+    <Content Include="HealthCheck\SystemIssuesPage.aspx" />
+    <Content Include="images\Acknowledge.png" />
+    <Content Include="images\addnote.png" />
+    <Content Include="images\BestBeforeBig.png" />
+    <Content Include="images\clientpermissions.png" />
+    <Content Include="images\cursor_drag_arrow.png" />
+    <Content Include="images\FloorLocation.png" />
+    <Content Include="images\IntegrationCheck.png" />
+    <Content Include="images\loadingNew.gif" />
+    <Content Include="images\LockUser.png" />
+    <Content Include="images\ReconcileDiscrepencyComplete.png" />
+    <Content Include="images\ReconcileDiscrepencyStarted.png" />
+    <Content Include="images\reset.png" />
+    <Content Include="images\SampleLocation.png" />
+    <Content Include="images\ScrapLocation.png" />
+    <Content Include="images\store-all-logo-New.png" />
+    <Content Include="Integration\IntegratedUserEditor.ascx" />
+    <Content Include="Integration\IntegrationChecks.aspx" />
+    <Content Include="Integration\IntegrationEventsAllGridView.ascx" />
+    <Content Include="Integration\IntegrationEventsPage.aspx" />
+    <Content Include="Invoicing\NominalCodeEditor.ascx" />
+    <Content Include="Invoicing\NominalCodeGridView.ascx" />
+    <Content Include="Invoicing\CreditNotesPage.aspx" />
+    <Content Include="Invoicing\EditInvoicePage.aspx" />
+    <Content Include="Invoicing\EmailContactsCustomersGridView.ascx" />
+    <Content Include="Invoicing\EmailContactsDivisionsGridView.ascx" />
+    <Content Include="Invoicing\EmailContactsEditor.ascx" />
+    <Content Include="Invoicing\EmailcontactsPage.aspx" />
+    <Content Include="Invoicing\HandlingRatesGridView.ascx" />
+    <Content Include="Invoicing\HandlingRatesEditor.ascx" />
+    <Content Include="Invoicing\HandlingRatesPage.aspx" />
+    <Content Include="Invoicing\InvoicesPage.aspx" />
+    <Content Include="Invoicing\NewInvoicePage.aspx" />
+    <Content Include="Invoicing\NominalCodesPage.aspx" />
+    <Content Include="Movements\LocationPalletBayDisplay.ascx" />
+    <Content Include="Reports\BuildingUnitLayoutReportPage.aspx" />
+    <Content Include="Discrepencies\Discrepencies.aspx" />
+    <Content Include="Administration\HealthCheckPage.aspx" />
+    <Content Include="Administration\HealthChecksGridView.ascx" />
+    <Content Include="Administration\HealthCheckEditor.ascx" />
+    <Content Include="Administration\HealthCheckUsersGridView.ascx" />
+    <Content Include="Administration\HealthCheckUsersEditor.ascx" />
+    <Content Include="images\Barcode.png" />
+    <Content Include="images\Batch.png" />
+    <Content Include="images\Cancelled.png" />
+    <Content Include="images\CheckedAndReceived.png" />
+    <Content Include="images\clone.png" />
+    <Content Include="images\CommodityCode.png" />
+    <Content Include="images\CreditNote.png" />
+    <Content Include="images\Current.png" />
+    <Content Include="images\CustomerPalletNumber.png" />
+    <Content Include="images\LeavePallet.png" />
+    <Content Include="Invoicing\CreditNoteEditor.ascx" />
+    <Content Include="images\StorageRate.png" />
+    <Content Include="RecurringCharges\RecurringChargesEditor.ascx" />
+    <Content Include="RecurringCharges\RecurringChargesPage.aspx" />
+    <Content Include="RecurringCharges\RecurringChargesGridView.ascx" />
+    <Content Include="Reports\MovementsBetweenBuildingsReportPage.aspx" />
+    <Content Include="Reports\PalletHistoryReportPage.aspx" />
+    <Content Include="Reports\PalletListReportPage.aspx" />
+    <Content Include="Reports\DriveThruSummaryReportPage.aspx" />
+    <Content Include="Reports\STAWMSBuildingUnitStockLevel.aspx" />
+    <Content Include="Reports\STAWMSDocketFinder.aspx" />
+    <Content Include="Reports\LocationSummaryReportPage.aspx" />
+    <Content Include="Reports\WarehousingCurrentStock.aspx" />
+    <Content Include="Reports\WeeklyStockMovementSummaryReportPage.aspx" />
+    <Content Include="ScheduledWork\ScheduledWorkEditor.ascx" />
+    <Content Include="ScheduledWork\ScheduledWorkGridView.ascx" />
+    <Content Include="ScheduledWork\ScheduledWorkPage.aspx" />
+    <Content Include="Security\UserRolePagePermissionEditor.ascx" />
+    <Content Include="Security\ManagePagePermissions.aspx" />
+    <Content Include="StockAdjustments\CustomerStockAdjustmentFieldsPage.aspx" />
+    <Content Include="StockAdjustments\CustomersStockAdjustmentFieldsGridView.ascx" />
+    <Content Include="StockAdjustments\StockAdjustmentFieldsGridView.ascx" />
+    <Content Include="StockAdjustments\StockAdjustmentFieldEditor.ascx" />
+    <Content Include="StockAdjustments\DivisionStockAdjustmentFieldsPage.aspx" />
+    <Content Include="StockAdjustments\DivisionStockAdjustmentFieldsGridView.ascx" />
+    <Content Include="StockInRules\StockInRulesPage.aspx" />
+    <Content Include="StockInRules\StockInRulesGridView.ascx" />
+    <Content Include="StockInRules\StockInRuleEditor.ascx" />
+    <Content Include="StockIn\StockInArrivedControl.ascx" />
+    <Content Include="StockIn\StockInDiscrepencies.ascx" />
+    <Content Include="Stock\NewPOStockTransferPage.aspx" />
+    <Content Include="Stock\StockTransfersAllGridView.ascx" />
+    <Content Include="Stock\StockTransfersAllPage.aspx" />
+    <Content Include="Stock\StockTransfersPage.aspx" />
+    <Content Include="Stock\StockItemBuildingUnitBaysPage.aspx" />
+    <Content Include="Stock\StockItemBuildingUnitEditor.ascx" />
+    <Content Include="Stock\StockItemBuildingUnitsGridView.ascx" />
+    <Content Include="StockOrder\StockOrderPrintPage.aspx" />
+    <Content Include="Stock\StockItemBuildingUnitsPage.aspx" />
+    <Content Include="StorageRates\StorageRateEditor.ascx" />
+    <Content Include="StorageRates\StorageRatesGridView.ascx" />
+    <Content Include="StorageRates\StorageRatesPage.aspx" />
+    <Content Include="images\StoreAllLogo.png" />
+    <Content Include="Reports\WarehousingClientReports.aspx" />
+    <Content Include="System\SystemSetupPage.aspx" />
+    <Content Include="WarehouseMachines\WarehouseMachineEditor.ascx" />
+    <Content Include="WarehouseMachines\WarehouseMachinesGridView.ascx" />
+    <Content Include="WarehouseMachines\WarehouseMachinesPage.aspx" />
+    <Content Include="WarehousingClient\StockAdjustmentHistoryPage.aspx" />
+    <Content Include="WarehousingClient\StockAdjustmentsPage.aspx" />
+    <Content Include="WarehousingClient\WarehousingClientSummaryGridView.ascx" />
+    <Content Include="WarehousingClient\DivisionDeliveryAddressEditor.ascx" />
+    <Content Include="WarehousingClient\DivisionDeliveryAddressesGridView.ascx" />
+    <Content Include="WarehousingClient\CustomerDeliveryAddressesGridView.ascx" />
+    <Content Include="WarehousingClient\WarehousingClientSetupPage.aspx" />
+    <Content Include="WarehousingClient\ClientContainerOutsGridView.ascx" />
+    <Content Include="WarehousingClient\ClientContainerInsGridView.ascx" />
+    <Content Include="css\timeout-dialog.css" />
+    <Content Include="Customers\CustomerShippingCompanyEditor.ascx" />
+    <Content Include="Customers\CustomerSupplierEditor.ascx" />
+    <Content Include="Customers\CustomerShippingCompaniesGridView.ascx" />
+    <Content Include="Customers\CustomerShippingCompaniesPage.aspx" />
+    <Content Include="Customers\CustomerSuppliersGridView.ascx" />
+    <Content Include="Customers\CustomerSuppliersPage.aspx" />
+    <Content Include="Customers\CustomerTransportCompaniesGridView.ascx" />
+    <Content Include="Customers\CustomerTransportCompaniesPage.aspx" />
+    <Content Include="Customers\CustomerTransportCompanyEditor.ascx" />
+    <Content Include="images\CycleCount22.png" />
+    <Content Include="images\home.png" />
+    <Content Include="images\IPRange.png" />
+    <Content Include="Locations\LocationDrillDownPage.aspx" />
+    <Content Include="StockAdjustments\StockAdjustmentEditor.ascx" />
+    <Content Include="WarehousingClient\StockHistoryPage.aspx" />
+    <Content Include="StockIn\StockInPrintPage.aspx" />
+    <Content Include="Stock\StockItemExactHeightsGridView.ascx" />
+    <Content Include="Stock\StockItemHeightEditor.ascx" />
+    <Content Include="Stock\StockItemHeightsPage.aspx" />
+    <Content Include="Stock\StockItemLayerHeightEditor.ascx" />
+    <Content Include="Stock\StockItemVersionEditor.ascx" />
+    <Content Include="Stock\StockItemVersionsGridView.ascx" />
+    <Content Include="Stock\StockItemVersionPage.aspx" />
+    <Content Include="WarehousingClient\ClientHomeSearchGridView.ascx" />
+    <Content Include="Home\WarehousingClientHome.aspx" />
+    <Content Include="Stock\StockItemCommodityCodeEditor.ascx" />
+    <Content Include="Stock\StockItemCommodityCodesGridView.ascx" />
+    <Content Include="Stock\StockItemCommodityCodePage.aspx" />
+    <Content Include="System\CommodityCodeEditor.ascx" />
+    <Content Include="System\CommodityCodesGridView.ascx" />
+    <Content Include="System\CommodityCodesPage.aspx" />
+    <Content Include="ExtraDocketFields\DocketExtraFieldValuesGridView.ascx" />
+    <Content Include="ExtraDocketFields\DocketExtraFieldsPage.aspx" />
+    <Content Include="ExtraDocketFields\DivisionExtraDocketFieldEditor.ascx" />
+    <Content Include="ExtraDocketFields\DivisionExtraDocketFieldsGridView.ascx" />
+    <Content Include="ExtraDocketFields\DivisionExtraDocketFieldsPage.aspx" />
+    <Content Include="ExtraServices\ExtraServiceCodeEditor.ascx" />
+    <Content Include="ExtraServices\ExtraServiceCodesGridView.ascx" />
+    <Content Include="ExtraServices\ExtraServiceCodesPage.aspx" />
+    <Content Include="ExtraServices\ExtraServicesPage.aspx" />
+    <Content Include="ExtraServices\ExtraServiceEditor.ascx" />
+    <Content Include="ExtraServices\ExtraServicesGridView.ascx" />
+    <Content Include="ExtraServices\DivisionExtraServicesPage.aspx" />
+    <Content Include="ExtraServices\DivisionExtraServiceEditor.ascx" />
+    <Content Include="ExtraServices\DivisionExtraServicesGridView.ascx" />
+    <Content Include="images\ExtraDocketField.png" />
+    <Content Include="images\ExtraService.png" />
+    <Content Include="images\Invoice.png" />
+    <Content Include="images\PalletMovementCheck.png" />
+    <Content Include="images\PalletStatus.png" />
+    <Content Include="Invoicing\CreditNoteGridView.ascx" />
+    <Content Include="Movements\MovementsPage.aspx" />
+    <Content Include="images\print.png" />
+    <Content Include="AutoPick\StockAutoPickGridView.ascx" />
+    <Content Include="AutoPick\StockAutoPickRulesPage.aspx" />
+    <Content Include="Stock\StockItemUnitCostEditor.ascx" />
+    <Content Include="Stock\StockItemUnitCostsGridView.ascx" />
+    <Content Include="Stock\StockItemUnitCostsPage.aspx" />
+    <Content Include="WarehousingClient\ClientStockInPage.aspx" />
+    <Content Include="Categories\CategoriesGridView.ascx" />
+    <Content Include="Categories\Categories.aspx" />
+    <Content Include="Categories\CategoryEditor.ascx" />
+    <Content Include="Customers\DivisionBuildingUnitEditor.ascx" />
+    <Content Include="Customers\DivisionBuildingUnitBaysPage.aspx" />
+    <Content Include="images\StockInAll.png" />
+    <Content Include="images\StockInCurrent.png" />
+    <Content Include="images\StockInNew.png" />
+    <Content Include="images\StockOrderAll.png" />
+    <Content Include="images\StockOrderCurrent.png" />
+    <Content Include="images\StockOrderNew.png" />
+    <Content Include="Invoicing\ExportToAccounts.aspx" />
+    <Content Include="images\BigMaintenance.png" />
+    <Content Include="images\BigWarning.png" />
+    <Content Include="images\CopyLine.png" />
+    <Content Include="images\Country.png" />
+    <Content Include="images\CountryRule.png" />
+    <Content Include="images\DeliveryAddress.png" />
+    <Content Include="images\Distribution.png" />
+    <Content Include="images\DistributionOrderCharge.png" />
+    <Content Include="images\DistributionPackagingCharge.png" />
+    <Content Include="images\DistributionPackagingType.png" />
+    <Content Include="images\DistributionPickingList.png" />
+    <Content Include="images\DistributionShippingCharge.png" />
+    <Content Include="images\DistributionTimedDelivery.png" />
+    <Content Include="images\DivisionBuildingUnitBay.png" />
+    <Content Include="images\excel.gif" />
+    <Content Include="images\FixedLocation.png" />
+    <Content Include="images\InvoiceAdHoc.png" />
+    <Content Include="images\InvoiceApproved.png" />
+    <Content Include="images\InvoiceEmailed.png" />
+    <Content Include="images\InvoiceExported.png" />
+    <Content Include="images\InvoiceGenerated.png" />
+    <Content Include="images\InvoicePaid.png" />
+    <Content Include="images\InvoicePosted.png" />
+    <Content Include="images\NewDeliveryAddress.png" />
+    <Content Include="images\NumberOfDown.png" />
+    <Content Include="images\NumberOfUp.png" />
+    <Content Include="images\pdf.gif" />
+    <Content Include="images\report.png" />
+    <Content Include="images\ReturnAddress.png" />
+    <Content Include="images\viewdetails.png" />
+    <Content Include="images\WorksOrderRule.png" />
+    <Content Include="Invoicing\InvoiceEditor.ascx" />
+    <Content Include="Invoicing\InvoiceGridView.ascx" />
+    <Content Include="PalletStatus\PalletStatusGridView.ascx" />
+    <Content Include="PalletStatus\PalletStatusPage.aspx" />
+    <Content Include="Reports\HistoricalMovementReportPage.aspx" />
+    <Content Include="Reports\LocationReportPage.aspx" />
+    <Content Include="Reports\ReportPrinter.ascx" />
+    <Content Include="DeliveryAddresses\ReturnAddressPage.aspx" />
+    <Content Include="DeliveryAddresses\ReturnAddressGridView.ascx" />
+    <Content Include="DeliveryAddresses\ReturnAddressEditor.ascx" />
+    <Content Include="StockIn\StockInsAllGridView.ascx" />
+    <Content Include="StockIn\StockInsAllPage.aspx" />
+    <Content Include="StockOrder\StockOrdersAllPage.aspx" />
+    <Content Include="StockOrder\StockOrdersAllGridView.ascx" />
+    <Content Include="Locations\FixedLocationEditor.ascx" />
+    <Content Include="Locations\FixedLocations.aspx" />
+    <Content Include="Locations\FixedLocationsGridView.ascx" />
+    <Content Include="images\BannerLeftDistribution.png" />
+    <Content Include="images\DistributionImages\seai.png" />
+    <Content Include="Customers\DivisionBuildingUnits.aspx" />
+    <Content Include="Customers\DivisionBuildingUnitsGridView.ascx" />
+    <Content Include="DeliveryAddresses\DeliveryAddressEditor.ascx" />
+    <Content Include="DeliveryAddresses\DeliveryAddressesGridView.ascx" />
+    <Content Include="DeliveryAddresses\DeliveryAddresses.aspx" />
+    <Content Include="images\Assign.png" />
+    <Content Include="images\AssignRacking.png" />
+    <Content Include="images\AssignWork.png" />
+    <Content Include="images\Attention.png" />
+    <Content Include="images\AwaitingAssignment.png" />
+    <Content Include="images\Category.png" />
+    <Content Include="images\Complete.png" />
+    <Content Include="images\CycleCount.png" />
+    <Content Include="images\DeleteLine.png" />
+    <Content Include="images\GroupRule.png" />
+    <Content Include="images\HandlingInCharge.png" />
+    <Content Include="images\HandlingOutCharge.png" />
+    <Content Include="images\LoadingBay.png" />
+    <Content Include="images\Login.png" />
+    <Content Include="images\MixedPallet.png" />
+    <Content Include="images\MixedPalletOff.png" />
+    <Content Include="images\MixedPalletOffDisabled.png" />
+    <Content Include="images\MixedPalletOn.png" />
+    <Content Include="images\MoveDown.png" />
+    <Content Include="images\MoveUp.png" />
+    <Content Include="images\NewLine.png" />
+    <Content Include="images\Pallet.png" />
+    <Content Include="images\PalletLocationPickComplete.png" />
+    <Content Include="images\PalletLocationPickNotComplete.png" />
+    <Content Include="images\PalletMovement.png" />
+    <Content Include="images\Person.png" />
+    <Content Include="images\PickPalletLocation.png" />
+    <Content Include="images\PreStockIn.png" />
+    <Content Include="images\Role.png" />
+    <Content Include="images\Sample.png" />
+    <Content Include="images\SamplingStation.png" />
+    <Content Include="images\Security.png" />
+    <Content Include="images\ShippingCompany.png" />
+    <Content Include="images\SplitRule.png" />
+    <Content Include="images\StockIn.png" />
+    <Content Include="images\StockInProcess.png" />
+    <Content Include="images\StockOrder.png" />
+    <Content Include="images\StockOrderProcess.png" />
+    <Content Include="images\StockOut.png" />
+    <Content Include="images\StoreAll.jpg" />
+    <Content Include="images\Supplier.png" />
+    <Content Include="images\TakeResponsibility.png" />
+    <Content Include="images\Transparent.jpg" />
+    <Content Include="images\Transparent.png" />
+    <Content Include="images\TransportCompany.png" />
+    <Content Include="images\User.png" />
+    <Content Include="images\UserManage.png" />
+    <Content Include="images\users.png" />
+    <Content Include="images\WorksOrder.png" />
+    <Content Include="Security\ManageUser.aspx" />
+    <Content Include="Security\PersonEditor.ascx" />
+    <Content Include="Security\Users.aspx" />
+    <Content Include="Transport\ShippingCompanyEditor.ascx" />
+    <Content Include="Transport\ShippingCompaniesGridView.ascx" />
+    <Content Include="Transport\ShippingCompanies.aspx" />
+    <Content Include="StockIn\StockInPalletMovementsGridView.ascx" />
+    <Content Include="StockIn\StockInPalletWorksOrdersGridView.ascx" />
+    <Content Include="StockIn\StockInPalletsGridView.ascx" />
+    <Content Include="StockIn\ContainerInGridView.ascx" />
+    <Content Include="StockIn\StockIns.aspx" />
+    <Content Include="StockIn\StockInProcessingGridView.ascx" />
+    <Content Include="StockIn\ContainerInProcessing.aspx" />
+    <Content Include="css\custom-theme\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_flat_55_fbec88_40x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_glass_75_d0e5f5_1x400.png" />
+    <Content Include="css\custom-theme\images\ui-bg_glass_85_dfeffc_1x400.png" />
+    <Content Include="css\custom-theme\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="css\custom-theme\images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_inset-hard_100_f5f8f9_1x100.png" />
+    <Content Include="css\custom-theme\images\ui-bg_inset-hard_100_fcfdfd_1x100.png" />
+    <Content Include="css\custom-theme\images\ui-icons_217bc0_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_469bdd_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_6da8d5_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_d8e7f3_256x240.png" />
+    <Content Include="css\custom-theme\images\ui-icons_f9bd01_256x240.png" />
+    <Content Include="css\custom-theme\jquery-ui-1.8.6.custom.css" />
+    <Content Include="css\fileuploader.css" />
+    <Content Include="css\jquery.css" />
+    <Content Include="images\BannerLeft.png" />
+    <Content Include="images\BannerRepeat.png" />
+    <Content Include="images\BannerRight.png" />
+    <Content Include="images\btnLeft.png" />
+    <Content Include="images\btnLeftActive.png" />
+    <Content Include="images\btnLeftHover.png" />
+    <Content Include="images\btnLeftSprite.png" />
+    <Content Include="images\btnMiddle - Copy.png" />
+    <Content Include="images\btnMiddle.png" />
+    <Content Include="images\btnRight.png" />
+    <Content Include="images\btnRightCopy1.png" />
+    <Content Include="images\btnRightHover.png" />
+    <Content Include="images\btnRightSprite.png" />
+    <Content Include="images\BuildingUnitFeature.png" />
+    <Content Include="images\BuildingUnitLicense.png" />
+    <Content Include="images\BuildLayout.png" />
+    <Content Include="images\ButtonSpriteLeft.png" />
+    <Content Include="images\ButtonSpriteMiddle.png" />
+    <Content Include="images\ButtonSpriteRight.png" />
+    <Content Include="images\ContentArea.png" />
+    <Content Include="images\ContentAreaLeft.png" />
+    <Content Include="images\ContentAreaRight.png" />
+    <Content Include="images\Delete.png" />
+    <Content Include="images\footerBottomLeft.png" />
+    <Content Include="images\footerBottomRight.png" />
+    <Content Include="images\LocateFromLeft.png" />
+    <Content Include="images\LocateFromRight.png" />
+    <Content Include="images\MenuLeft.png" />
+    <Content Include="images\MenuMiddle.png" />
+    <Content Include="images\MenuRight.png" />
+    <Content Include="images\MenuSeperator.png" />
+    <Content Include="images\SeperatorLeft.png" />
+    <Content Include="images\SeperatorMiddle.png" />
+    <Content Include="images\SeperatorRight.png" />
+    <Content Include="images\SetDownArea.png" />
+    <Content Include="images\ShowColumnLayout.png" />
+    <Content Include="images\Squirell.png" />
+    <Content Include="images\StockItem.png" />
+    <Content Include="Buildings\SetDownAreasGridView.ascx" />
+    <Content Include="Buildings\SetDownAreaEditor.ascx" />
+    <Content Include="Buildings\LoadingBayEditor.ascx" />
+    <Content Include="Buildings\LoadingBaysGridView.ascx" />
+    <Content Include="Buildings\ManageSetDownAreas.aspx" />
+    <Content Include="Stock\StockItemGroupRuleEditor.ascx" />
+    <Content Include="Stock\StockItemGroupRulesGridView.ascx" />
+    <Content Include="Stock\StockItemSplitRuleEditor.ascx" />
+    <Content Include="Stock\StockItemSplitRulesGridView.ascx" />
+    <Content Include="StockIn\StockInPage.aspx" />
+    <Content Include="Stock\StockItemEditor.ascx" />
+    <Content Include="Stock\StockItemsGridView.ascx" />
+    <Content Include="Stock\StockItems.aspx" />
+    <Content Include="Suppliers\SupplierEditor.ascx" />
+    <Content Include="Suppliers\SuppliersGridView.ascx" />
+    <Content Include="Suppliers\Suppliers.aspx" />
+    <Content Include="Contacts\ContactEditor.ascx" />
+    <Content Include="Contacts\Contacts.aspx" />
+    <Content Include="Contacts\ContactsGridView.ascx" />
+    <Content Include="css\BuildingUnitLayout.css" />
+    <Content Include="css\screen.css" />
+    <Content Include="Customers\Customers.aspx" />
+    <Content Include="Customers\Divisions.aspx" />
+    <Content Include="Customers\DivisionsGridView.ascx" />
+    <Content Include="Customers\DivisionEditor.ascx" />
+    <Content Include="handlers\GenericAutoComplete.ashx" />
+    <Content Include="handlers\STAajax.ashx" />
+    <Content Include="handlers\UploadHandler.ashx" />
+    <Content Include="handlers\Captcha.ashx" />
+    <Content Include="handlers\WorkOrderAjaxHandler.ashx" />
+    <Content Include="MasterPages\HiContentClientMaster.Master" />
+    <Content Include="images\squirrelgif.webp" />
+    <Content Include="MasterPages\MasterDailyInventory.Master" />
+    <Content Include="Reports\BuildingUnitLayout.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="handlers\SchedulerAjaxHandler.ashx" />
+    <None Include="images\StockOut.xcf" />
+    <Content Include="Reports\ClientPalletsListAdditionalFields.rpx" />
+    <Content Include="Reports\WorksOrderRelabelling.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\DanonePalletListReport.rpx" />
+    <Content Include="Reports\DanoneBarcodeLabel.rpx" />
+    <Content Include="Reports\MovementsBetweenBuildingsReport.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\STAWMSEmptyBarcodeLabel.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\PalletHistoryReport.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\LocationSummaryReport.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\DanoneStockOutPackingList.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\DriveThruSummaryReport.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\InvoiceCheckList.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\CoeurStockInPackingList.rpx">
+      <SubType>
+      </SubType>
+    </Content>
+    <Content Include="Reports\CoeurStockInCommercialInvoice.rpx">
+      <SubType>
+      </SubType>
+    </Content>
+    <Content Include="Reports\CoeurStockOutPackingList.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\CoeurStockOutCosts.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\ClientPalletsList.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\CellBarcode.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\ContainerOutLabel.rpx" />
+    <Content Include="Reports\GLANBIABarcodeLabel.rpx" />
+    <Content Include="Reports\GlanbiaStockOutPackingList.rpx" />
+    <Content Include="Reports\GSKBarcodeLabel.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\STAWMSBuildingUnitStockLevel.rpx" />
+    <Content Include="Reports\STAWMSCurrentStock.rpx" />
+    <Content Include="Reports\STAWMSDocketFinder.rpx" />
+    <Content Include="Reports\STAWMSEachBarcodeLabel.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\StockMovementsDaily.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\WeeklyStockMovementSummary.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\HistoricalStockMovementBatch.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\HistoricalStockMovementClient.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\CurrentStockClient.rpx">
+      <SubType>
+      </SubType>
+    </Content>
+    <Content Include="Reports\PurchaseOrder.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\SplitWorksOrder.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\CustomerInvoice.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\STAWMSBarcodeLabel.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\StockInPackingList.rpx">
+      <SubType>
+      </SubType>
+    </Content>
+    <Content Include="Reports\StockOutCosts.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\WorksOrderMovement.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\WorksOrder.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\StockOutDocket.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\Invoice.rpx">
+      <SubType>
+      </SubType>
+    </Content>
+    <Content Include="Reports\CycleCount.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\DailyInventorySummary.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\DailyLocationSummary.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\DailyInventoryChanges.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\DanoneStockOutDocket.rpx" />
+    <Content Include="MasterPages\MasterDistribution.Master" />
+    <Content Include="MasterPages\MasterBlank.Master" />
+    <Content Include="libman.json" />
+    <Content Include="javascript\jquery\vssver2.scc" />
+    <Content Include="Reports\DistributionChargesReport.rpx" />
+    <Content Include="Reports\DistributionFulfilledOrders.rpx" />
+    <Content Include="Reports\DanoneStockOutDocketWithBarcodes1.rpx" />
+    <Content Include="Reports\DanoneStockOutDocketUpdate.rpx" />
+    <Content Include="Reports\MeijiStockOutDocketwithBarcodes.rpx" />
+    <None Include="Properties\PublishProfiles\store-all-wms-test - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\store-all-wms-test - ReadOnly - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\store-all-wms-test - Web Deploy.pubxml" />
+    <Content Include="Reports\ABSStockOutPackingList.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <None Include="Reports\DistributionLabels\AnPost.rpx">
+      <SubType>Component</SubType>
+    </None>
+    <None Include="Reports\DistributionLabels\Default.rpx">
+      <SubType>Component</SubType>
+    </None>
+    <Content Include="Reports\DistributionLabels\DistributionLabel_AnPost.rpx" />
+    <Content Include="Reports\DistributionLabels\DistributionPickList.rpx" />
+    <None Include="Reports\DistributionLabels\Nightline.rpx">
+      <SubType>Component</SubType>
+    </None>
+    <Content Include="Reports\HistoricalStockMovement.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\PutAwayList.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\StockInDocket.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="MasterPages\HiContentMaster.Master" />
+    <Content Include="css\menu_black.css" />
+    <Content Include="css\menu_red.css" />
+    <Content Include="favicon.ico" />
+    <Compile Include="AlgTest.cs" />
+    <Compile Include="AutoPick\AutoPickRuleEditor.ascx.cs">
+      <DependentUpon>AutoPickRuleEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPick\AutoPickRuleEditor.ascx.designer.cs">
+      <DependentUpon>AutoPickRuleEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPick\AutoPickRulesGridView.ascx.cs">
+      <DependentUpon>AutoPickRulesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPick\AutoPickRulesGridView.ascx.designer.cs">
+      <DependentUpon>AutoPickRulesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPlace\AutoPlaceRuleEditor.ascx.cs">
+      <DependentUpon>AutoPlaceRuleEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPlace\AutoPlaceRuleEditor.ascx.designer.cs">
+      <DependentUpon>AutoPlaceRuleEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPlace\AutoPlaceRulesGridView.ascx.cs">
+      <DependentUpon>AutoPlaceRulesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPlace\AutoPlaceRulesGridView.ascx.designer.cs">
+      <DependentUpon>AutoPlaceRulesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPlace\CustomerAutoPlaceRulesPage.aspx.cs">
+      <DependentUpon>CustomerAutoPlaceRulesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPlace\CustomerAutoPlaceRulesPage.aspx.designer.cs">
+      <DependentUpon>CustomerAutoPlaceRulesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPlace\CustomersAutoPlaceGridView.ascx.cs">
+      <DependentUpon>CustomersAutoPlaceGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPlace\CustomersAutoPlaceGridView.ascx.designer.cs">
+      <DependentUpon>CustomersAutoPlaceGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPlace\DivisionAutoPlaceRulesPage.aspx.cs">
+      <DependentUpon>DivisionAutoPlaceRulesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPlace\DivisionAutoPlaceRulesPage.aspx.designer.cs">
+      <DependentUpon>DivisionAutoPlaceRulesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPlace\DivisionsAutoPlaceGridView.ascx.cs">
+      <DependentUpon>DivisionsAutoPlaceGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPlace\DivisionsAutoPlaceGridView.ascx.designer.cs">
+      <DependentUpon>DivisionsAutoPlaceGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPlace\StockAutoPlaceGridView.ascx.cs">
+      <DependentUpon>StockAutoPlaceGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPlace\StockAutoPlaceGridView.ascx.designer.cs">
+      <DependentUpon>StockAutoPlaceGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPlace\StockAutoPlaceRulesPage.aspx.cs">
+      <DependentUpon>StockAutoPlaceRulesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPlace\StockAutoPlaceRulesPage.aspx.designer.cs">
+      <DependentUpon>StockAutoPlaceRulesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Barcoding\BarcodingPage.aspx.cs">
+      <DependentUpon>BarcodingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Barcoding\BarcodingPage.aspx.designer.cs">
+      <DependentUpon>BarcodingPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingEditor.ascx.cs">
+      <DependentUpon>BuildingEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingEditor.ascx.designer.cs">
+      <DependentUpon>BuildingEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingsGridView.ascx.cs">
+      <DependentUpon>BuildingsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingsGridView.ascx.designer.cs">
+      <DependentUpon>BuildingsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\Buildings.aspx.cs">
+      <DependentUpon>Buildings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\Buildings.aspx.designer.cs">
+      <DependentUpon>Buildings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitFloorLocations.aspx.cs">
+      <DependentUpon>BuildingUnitFloorLocations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitFloorLocations.aspx.designer.cs">
+      <DependentUpon>BuildingUnitFloorLocations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnits.aspx.cs">
+      <DependentUpon>BuildingUnits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnits.aspx.designer.cs">
+      <DependentUpon>BuildingUnits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitSampleLocations.aspx.cs">
+      <DependentUpon>BuildingUnitSampleLocations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitSampleLocations.aspx.designer.cs">
+      <DependentUpon>BuildingUnitSampleLocations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitsGridView.ascx.cs">
+      <DependentUpon>BuildingUnitsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitsGridView.ascx.designer.cs">
+      <DependentUpon>BuildingUnitsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitEditor.ascx.cs">
+      <DependentUpon>BuildingUnitEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitEditor.ascx.designer.cs">
+      <DependentUpon>BuildingUnitEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitSetDownAreas.aspx.cs">
+      <DependentUpon>BuildingUnitSetDownAreas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitSetDownAreas.aspx.designer.cs">
+      <DependentUpon>BuildingUnitSetDownAreas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitScrapLocationsPage.aspx.cs">
+      <DependentUpon>BuildingUnitScrapLocationsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitScrapLocationsPage.aspx.designer.cs">
+      <DependentUpon>BuildingUnitScrapLocationsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitUsersPage.aspx.cs">
+      <DependentUpon>BuildingUnitUsersPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitUsersPage.aspx.designer.cs">
+      <DependentUpon>BuildingUnitUsersPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitUsersGridView.ascx.cs">
+      <DependentUpon>BuildingUnitUsersGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitUsersGridView.ascx.designer.cs">
+      <DependentUpon>BuildingUnitUsersGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\FloorLocationEditor.ascx.cs">
+      <DependentUpon>FloorLocationEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\FloorLocationEditor.ascx.designer.cs">
+      <DependentUpon>FloorLocationEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\FloorLocationsGridView.ascx.cs">
+      <DependentUpon>FloorLocationsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\FloorLocationsGridView.ascx.designer.cs">
+      <DependentUpon>FloorLocationsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\SampleLocationEditor.ascx.cs">
+      <DependentUpon>SampleLocationEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\SampleLocationEditor.ascx.designer.cs">
+      <DependentUpon>SampleLocationEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\SampleLocationsGridView.ascx.cs">
+      <DependentUpon>SampleLocationsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\SampleLocationsGridView.ascx.designer.cs">
+      <DependentUpon>SampleLocationsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\SetDownAreasGridView.ascx.cs">
+      <DependentUpon>SetDownAreasGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\SetDownAreasGridView.ascx.designer.cs">
+      <DependentUpon>SetDownAreasGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\SetDownAreaEditor.ascx.cs">
+      <DependentUpon>SetDownAreaEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\SetDownAreaEditor.ascx.designer.cs">
+      <DependentUpon>SetDownAreaEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitMap.aspx.cs">
+      <DependentUpon>BuildingUnitMap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitMap.aspx.designer.cs">
+      <DependentUpon>BuildingUnitMap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitLoadingBays.aspx.cs">
+      <DependentUpon>BuildingUnitLoadingBays.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitLoadingBays.aspx.designer.cs">
+      <DependentUpon>BuildingUnitLoadingBays.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitSetDownAreasAssignedGridView.ascx.cs">
+      <DependentUpon>BuildingUnitSetDownAreasAssignedGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitSetDownAreasAssignedGridView.ascx.designer.cs">
+      <DependentUpon>BuildingUnitSetDownAreasAssignedGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitSetDownAreasAvailableGridView.ascx.cs">
+      <DependentUpon>BuildingUnitSetDownAreasAvailableGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitSetDownAreasAvailableGridView.ascx.designer.cs">
+      <DependentUpon>BuildingUnitSetDownAreasAvailableGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPick\CustomersAutoPickGridView.ascx.cs">
+      <DependentUpon>CustomersAutoPickGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPick\CustomersAutoPickGridView.ascx.designer.cs">
+      <DependentUpon>CustomersAutoPickGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPick\DivisionsAutoPickGridView.ascx.cs">
+      <DependentUpon>DivisionsAutoPickGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPick\DivisionsAutoPickGridView.ascx.designer.cs">
+      <DependentUpon>DivisionsAutoPickGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPick\StockAutoPickGridView.ascx.cs">
+      <DependentUpon>StockAutoPickGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPick\StockAutoPickGridView.ascx.designer.cs">
+      <DependentUpon>StockAutoPickGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPick\CustomerAutoPickRulesPage.aspx.cs">
+      <DependentUpon>CustomerAutoPickRulesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPick\CustomerAutoPickRulesPage.aspx.designer.cs">
+      <DependentUpon>CustomerAutoPickRulesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPick\StockAutoPickRulesPage.aspx.cs">
+      <DependentUpon>StockAutoPickRulesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPick\StockAutoPickRulesPage.aspx.designer.cs">
+      <DependentUpon>StockAutoPickRulesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoPick\DivisionAutoPickRulesPage.aspx.cs">
+      <DependentUpon>DivisionAutoPickRulesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoPick\DivisionAutoPickRulesPage.aspx.designer.cs">
+      <DependentUpon>DivisionAutoPickRulesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitBayObstructionsPage.aspx.cs">
+      <DependentUpon>BuildingUnitBayObstructionsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitBayObstructionsPage.aspx.designer.cs">
+      <DependentUpon>BuildingUnitBayObstructionsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitBayObstructionGridView.ascx.cs">
+      <DependentUpon>BuildingUnitBayObstructionGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitBayObstructionGridView.ascx.designer.cs">
+      <DependentUpon>BuildingUnitBayObstructionGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitBayObstructionEditor.ascx.cs">
+      <DependentUpon>BuildingUnitBayObstructionEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\BuildingUnitBayObstructionEditor.ascx.designer.cs">
+      <DependentUpon>BuildingUnitBayObstructionEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryAddresses\DivisionDeliveryAddressesPage.aspx.cs">
+      <DependentUpon>DivisionDeliveryAddressesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryAddresses\DivisionDeliveryAddressesPage.aspx.designer.cs">
+      <DependentUpon>DivisionDeliveryAddressesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error\ErrorHandler.aspx.cs">
+      <DependentUpon>ErrorHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error\ErrorHandler.aspx.designer.cs">
+      <DependentUpon>ErrorHandler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\WorkOrderAjaxHandler.ashx.cs">
+      <DependentUpon>WorkOrderAjaxHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="HealthCheck\SystemIssuesPage.aspx.cs">
+      <DependentUpon>SystemIssuesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HealthCheck\SystemIssuesPage.aspx.designer.cs">
+      <DependentUpon>SystemIssuesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Integration\IntegratedUserEditor.ascx.cs">
+      <DependentUpon>IntegratedUserEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Integration\IntegratedUserEditor.ascx.designer.cs">
+      <DependentUpon>IntegratedUserEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Integration\IntegrationChecks.aspx.cs">
+      <DependentUpon>IntegrationChecks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Integration\IntegrationChecks.aspx.designer.cs">
+      <DependentUpon>IntegrationChecks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Integration\IntegrationEventsAllGridView.ascx.cs">
+      <DependentUpon>IntegrationEventsAllGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Integration\IntegrationEventsAllGridView.ascx.designer.cs">
+      <DependentUpon>IntegrationEventsAllGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Integration\IntegrationEventsPage.aspx.cs">
+      <DependentUpon>IntegrationEventsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Integration\IntegrationEventsPage.aspx.designer.cs">
+      <DependentUpon>IntegrationEventsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\NominalCodeEditor.ascx.cs">
+      <DependentUpon>NominalCodeEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\NominalCodeEditor.ascx.designer.cs">
+      <DependentUpon>NominalCodeEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\NominalCodeGridView.ascx.cs">
+      <DependentUpon>NominalCodeGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\NominalCodeGridView.ascx.designer.cs">
+      <DependentUpon>NominalCodeGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\CreditNotesPage.aspx.cs">
+      <DependentUpon>CreditNotesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\CreditNotesPage.aspx.designer.cs">
+      <DependentUpon>CreditNotesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\EditInvoicePage.aspx.cs">
+      <DependentUpon>EditInvoicePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\EditInvoicePage.aspx.designer.cs">
+      <DependentUpon>EditInvoicePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\EmailContactsCustomersGridView.ascx.cs">
+      <DependentUpon>EmailContactsCustomersGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\EmailContactsCustomersGridView.ascx.designer.cs">
+      <DependentUpon>EmailContactsCustomersGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\EmailContactsDivisionsGridView.ascx.cs">
+      <DependentUpon>EmailContactsDivisionsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\EmailContactsDivisionsGridView.ascx.designer.cs">
+      <DependentUpon>EmailContactsDivisionsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\EmailContactsEditor.ascx.cs">
+      <DependentUpon>EmailContactsEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\EmailContactsEditor.ascx.designer.cs">
+      <DependentUpon>EmailContactsEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\EmailcontactsPage.aspx.cs">
+      <DependentUpon>EmailcontactsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\EmailcontactsPage.aspx.designer.cs">
+      <DependentUpon>EmailcontactsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\HandlingRatesGridView.ascx.cs">
+      <DependentUpon>HandlingRatesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\HandlingRatesGridView.ascx.designer.cs">
+      <DependentUpon>HandlingRatesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\HandlingRatesEditor.ascx.cs">
+      <DependentUpon>HandlingRatesEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\HandlingRatesEditor.ascx.designer.cs">
+      <DependentUpon>HandlingRatesEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\HandlingRatesPage.aspx.cs">
+      <DependentUpon>HandlingRatesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\HandlingRatesPage.aspx.designer.cs">
+      <DependentUpon>HandlingRatesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\InvoicesPage.aspx.cs">
+      <DependentUpon>InvoicesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\InvoicesPage.aspx.designer.cs">
+      <DependentUpon>InvoicesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\NewInvoicePage.aspx.cs">
+      <DependentUpon>NewInvoicePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\NewInvoicePage.aspx.designer.cs">
+      <DependentUpon>NewInvoicePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\NominalCodesPage.aspx.cs">
+      <DependentUpon>NominalCodesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\NominalCodesPage.aspx.designer.cs">
+      <DependentUpon>NominalCodesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Movements\LocationPalletBayDisplay.ascx.cs">
+      <DependentUpon>LocationPalletBayDisplay.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movements\LocationPalletBayDisplay.ascx.designer.cs">
+      <DependentUpon>LocationPalletBayDisplay.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\BuildingUnitLayoutReportPage.aspx.cs">
+      <DependentUpon>BuildingUnitLayoutReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\BuildingUnitLayoutReportPage.aspx.designer.cs">
+      <DependentUpon>BuildingUnitLayoutReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Discrepencies\Discrepencies.aspx.cs">
+      <DependentUpon>Discrepencies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Discrepencies\Discrepencies.aspx.designer.cs">
+      <DependentUpon>Discrepencies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\HealthCheckPage.aspx.cs">
+      <DependentUpon>HealthCheckPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\HealthCheckPage.aspx.designer.cs">
+      <DependentUpon>HealthCheckPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\HealthChecksGridView.ascx.cs">
+      <DependentUpon>HealthChecksGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\HealthChecksGridView.ascx.designer.cs">
+      <DependentUpon>HealthChecksGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\HealthCheckEditor.ascx.cs">
+      <DependentUpon>HealthCheckEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\HealthCheckEditor.ascx.designer.cs">
+      <DependentUpon>HealthCheckEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\HealthCheckUsersGridView.ascx.cs">
+      <DependentUpon>HealthCheckUsersGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\HealthCheckUsersGridView.ascx.designer.cs">
+      <DependentUpon>HealthCheckUsersGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\HealthCheckUsersEditor.ascx.cs">
+      <DependentUpon>HealthCheckUsersEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\HealthCheckUsersEditor.ascx.designer.cs">
+      <DependentUpon>HealthCheckUsersEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\CreditNoteEditor.ascx.cs">
+      <DependentUpon>CreditNoteEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\CreditNoteEditor.ascx.designer.cs">
+      <DependentUpon>CreditNoteEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="RecurringCharges\RecurringChargesEditor.ascx.cs">
+      <DependentUpon>RecurringChargesEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecurringCharges\RecurringChargesEditor.ascx.designer.cs">
+      <DependentUpon>RecurringChargesEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="RecurringCharges\RecurringChargesPage.aspx.cs">
+      <DependentUpon>RecurringChargesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecurringCharges\RecurringChargesPage.aspx.designer.cs">
+      <DependentUpon>RecurringChargesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RecurringCharges\RecurringChargesGridView.ascx.cs">
+      <DependentUpon>RecurringChargesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecurringCharges\RecurringChargesGridView.ascx.designer.cs">
+      <DependentUpon>RecurringChargesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\MovementsBetweenBuildingsReportPage.aspx.cs">
+      <DependentUpon>MovementsBetweenBuildingsReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\MovementsBetweenBuildingsReportPage.aspx.designer.cs">
+      <DependentUpon>MovementsBetweenBuildingsReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PalletHistoryReportPage.aspx.cs">
+      <DependentUpon>PalletHistoryReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\PalletHistoryReportPage.aspx.designer.cs">
+      <DependentUpon>PalletHistoryReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\PalletListReportPage.aspx.cs">
+      <DependentUpon>PalletListReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\PalletListReportPage.aspx.designer.cs">
+      <DependentUpon>PalletListReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DriveThruSummaryReportPage.aspx.cs">
+      <DependentUpon>DriveThruSummaryReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\DriveThruSummaryReportPage.aspx.designer.cs">
+      <DependentUpon>DriveThruSummaryReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\STAWMSBuildingUnitStockLevel.aspx.cs">
+      <DependentUpon>STAWMSBuildingUnitStockLevel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\STAWMSBuildingUnitStockLevel.aspx.designer.cs">
+      <DependentUpon>STAWMSBuildingUnitStockLevel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\STAWMSDocketFinder.aspx.cs">
+      <DependentUpon>STAWMSDocketFinder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\STAWMSDocketFinder.aspx.designer.cs">
+      <DependentUpon>STAWMSDocketFinder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\LocationSummaryReportPage.aspx.cs">
+      <DependentUpon>LocationSummaryReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\LocationSummaryReportPage.aspx.designer.cs">
+      <DependentUpon>LocationSummaryReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\WarehousingCurrentStock.aspx.cs">
+      <DependentUpon>WarehousingCurrentStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\WarehousingCurrentStock.aspx.designer.cs">
+      <DependentUpon>WarehousingCurrentStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\WeeklyStockMovementSummaryReportPage.aspx.cs">
+      <DependentUpon>WeeklyStockMovementSummaryReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\WeeklyStockMovementSummaryReportPage.aspx.designer.cs">
+      <DependentUpon>WeeklyStockMovementSummaryReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduledWork\ScheduledWorkEditor.ascx.cs">
+      <DependentUpon>ScheduledWorkEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScheduledWork\ScheduledWorkEditor.ascx.designer.cs">
+      <DependentUpon>ScheduledWorkEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduledWork\ScheduledWorkGridView.ascx.cs">
+      <DependentUpon>ScheduledWorkGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScheduledWork\ScheduledWorkGridView.ascx.designer.cs">
+      <DependentUpon>ScheduledWorkGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduledWork\ScheduledWorkPage.aspx.cs">
+      <DependentUpon>ScheduledWorkPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScheduledWork\ScheduledWorkPage.aspx.designer.cs">
+      <DependentUpon>ScheduledWorkPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UserRolePagePermissionEditor.ascx.cs">
+      <DependentUpon>UserRolePagePermissionEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\UserRolePagePermissionEditor.ascx.designer.cs">
+      <DependentUpon>UserRolePagePermissionEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ManagePagePermissions.aspx.cs">
+      <DependentUpon>ManagePagePermissions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\ManagePagePermissions.aspx.designer.cs">
+      <DependentUpon>ManagePagePermissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockAdjustments\CustomerStockAdjustmentFieldsPage.aspx.cs">
+      <DependentUpon>CustomerStockAdjustmentFieldsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockAdjustments\CustomerStockAdjustmentFieldsPage.aspx.designer.cs">
+      <DependentUpon>CustomerStockAdjustmentFieldsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockAdjustments\CustomersStockAdjustmentFieldsGridView.ascx.cs">
+      <DependentUpon>CustomersStockAdjustmentFieldsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockAdjustments\CustomersStockAdjustmentFieldsGridView.ascx.designer.cs">
+      <DependentUpon>CustomersStockAdjustmentFieldsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockAdjustments\StockAdjustmentFieldsGridView.ascx.cs">
+      <DependentUpon>StockAdjustmentFieldsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockAdjustments\StockAdjustmentFieldsGridView.ascx.designer.cs">
+      <DependentUpon>StockAdjustmentFieldsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockAdjustments\StockAdjustmentFieldEditor.ascx.cs">
+      <DependentUpon>StockAdjustmentFieldEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockAdjustments\StockAdjustmentFieldEditor.ascx.designer.cs">
+      <DependentUpon>StockAdjustmentFieldEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockAdjustments\DivisionStockAdjustmentFieldsPage.aspx.cs">
+      <DependentUpon>DivisionStockAdjustmentFieldsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockAdjustments\DivisionStockAdjustmentFieldsPage.aspx.designer.cs">
+      <DependentUpon>DivisionStockAdjustmentFieldsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockAdjustments\DivisionStockAdjustmentFieldsGridView.ascx.cs">
+      <DependentUpon>DivisionStockAdjustmentFieldsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockAdjustments\DivisionStockAdjustmentFieldsGridView.ascx.designer.cs">
+      <DependentUpon>DivisionStockAdjustmentFieldsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockInRules\StockInRulesPage.aspx.cs">
+      <DependentUpon>StockInRulesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockInRules\StockInRulesPage.aspx.designer.cs">
+      <DependentUpon>StockInRulesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockInRules\StockInRulesGridView.ascx.cs">
+      <DependentUpon>StockInRulesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockInRules\StockInRulesGridView.ascx.designer.cs">
+      <DependentUpon>StockInRulesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockInRules\StockInRuleEditor.ascx.cs">
+      <DependentUpon>StockInRuleEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockInRules\StockInRuleEditor.ascx.designer.cs">
+      <DependentUpon>StockInRuleEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInArrivedControl.ascx.cs">
+      <DependentUpon>StockInArrivedControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInArrivedControl.ascx.designer.cs">
+      <DependentUpon>StockInArrivedControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInDiscrepencies.ascx.cs">
+      <DependentUpon>StockInDiscrepencies.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInDiscrepencies.ascx.designer.cs">
+      <DependentUpon>StockInDiscrepencies.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\NewPOStockTransferPage.aspx.cs">
+      <DependentUpon>NewPOStockTransferPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\NewPOStockTransferPage.aspx.designer.cs">
+      <DependentUpon>NewPOStockTransferPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockTransfersAllGridView.ascx.cs">
+      <DependentUpon>StockTransfersAllGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockTransfersAllGridView.ascx.designer.cs">
+      <DependentUpon>StockTransfersAllGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockTransfersAllPage.aspx.cs">
+      <DependentUpon>StockTransfersAllPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockTransfersAllPage.aspx.designer.cs">
+      <DependentUpon>StockTransfersAllPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockTransfersPage.aspx.cs">
+      <DependentUpon>StockTransfersPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockTransfersPage.aspx.designer.cs">
+      <DependentUpon>StockTransfersPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemBuildingUnitBaysPage.aspx.cs">
+      <DependentUpon>StockItemBuildingUnitBaysPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemBuildingUnitBaysPage.aspx.designer.cs">
+      <DependentUpon>StockItemBuildingUnitBaysPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemBuildingUnitEditor.ascx.cs">
+      <DependentUpon>StockItemBuildingUnitEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemBuildingUnitEditor.ascx.designer.cs">
+      <DependentUpon>StockItemBuildingUnitEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemBuildingUnitsGridView.ascx.cs">
+      <DependentUpon>StockItemBuildingUnitsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemBuildingUnitsGridView.ascx.designer.cs">
+      <DependentUpon>StockItemBuildingUnitsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockOrder\StockOrderPrintPage.aspx.cs">
+      <DependentUpon>StockOrderPrintPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockOrder\StockOrderPrintPage.aspx.designer.cs">
+      <DependentUpon>StockOrderPrintPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemBuildingUnitsPage.aspx.cs">
+      <DependentUpon>StockItemBuildingUnitsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemBuildingUnitsPage.aspx.designer.cs">
+      <DependentUpon>StockItemBuildingUnitsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StorageRates\StorageRateEditor.ascx.cs">
+      <DependentUpon>StorageRateEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StorageRates\StorageRateEditor.ascx.designer.cs">
+      <DependentUpon>StorageRateEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StorageRates\StorageRatesGridView.ascx.cs">
+      <DependentUpon>StorageRatesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StorageRates\StorageRatesGridView.ascx.designer.cs">
+      <DependentUpon>StorageRatesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StorageRates\StorageRatesPage.aspx.cs">
+      <DependentUpon>StorageRatesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StorageRates\StorageRatesPage.aspx.designer.cs">
+      <DependentUpon>StorageRatesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\WarehousingClientReports.aspx.cs">
+      <DependentUpon>WarehousingClientReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\WarehousingClientReports.aspx.designer.cs">
+      <DependentUpon>WarehousingClientReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System\SystemSetupPage.aspx.cs">
+      <DependentUpon>SystemSetupPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System\SystemSetupPage.aspx.designer.cs">
+      <DependentUpon>SystemSetupPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseMachines\WarehouseMachineEditor.ascx.cs">
+      <DependentUpon>WarehouseMachineEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehouseMachines\WarehouseMachineEditor.ascx.designer.cs">
+      <DependentUpon>WarehouseMachineEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseMachines\WarehouseMachinesGridView.ascx.cs">
+      <DependentUpon>WarehouseMachinesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehouseMachines\WarehouseMachinesGridView.ascx.designer.cs">
+      <DependentUpon>WarehouseMachinesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehouseMachines\WarehouseMachinesPage.aspx.cs">
+      <DependentUpon>WarehouseMachinesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehouseMachines\WarehouseMachinesPage.aspx.designer.cs">
+      <DependentUpon>WarehouseMachinesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\StockAdjustmentHistoryPage.aspx.cs">
+      <DependentUpon>StockAdjustmentHistoryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\StockAdjustmentHistoryPage.aspx.designer.cs">
+      <DependentUpon>StockAdjustmentHistoryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\StockAdjustmentsPage.aspx.cs">
+      <DependentUpon>StockAdjustmentsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\StockAdjustmentsPage.aspx.designer.cs">
+      <DependentUpon>StockAdjustmentsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\WarehousingClientSummaryGridView.ascx.cs">
+      <DependentUpon>WarehousingClientSummaryGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\WarehousingClientSummaryGridView.ascx.designer.cs">
+      <DependentUpon>WarehousingClientSummaryGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\DivisionDeliveryAddressEditor.ascx.cs">
+      <DependentUpon>DivisionDeliveryAddressEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\DivisionDeliveryAddressEditor.ascx.designer.cs">
+      <DependentUpon>DivisionDeliveryAddressEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\DivisionDeliveryAddressesGridView.ascx.cs">
+      <DependentUpon>DivisionDeliveryAddressesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\DivisionDeliveryAddressesGridView.ascx.designer.cs">
+      <DependentUpon>DivisionDeliveryAddressesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\CustomerDeliveryAddressesGridView.ascx.cs">
+      <DependentUpon>CustomerDeliveryAddressesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\CustomerDeliveryAddressesGridView.ascx.designer.cs">
+      <DependentUpon>CustomerDeliveryAddressesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\WarehousingClientSetupPage.aspx.cs">
+      <DependentUpon>WarehousingClientSetupPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\WarehousingClientSetupPage.aspx.designer.cs">
+      <DependentUpon>WarehousingClientSetupPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientContainerOutsGridView.ascx.cs">
+      <DependentUpon>ClientContainerOutsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientContainerOutsGridView.ascx.designer.cs">
+      <DependentUpon>ClientContainerOutsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientContainerInsGridView.ascx.cs">
+      <DependentUpon>ClientContainerInsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientContainerInsGridView.ascx.designer.cs">
+      <DependentUpon>ClientContainerInsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\CustomerShippingCompanyEditor.ascx.cs">
+      <DependentUpon>CustomerShippingCompanyEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\CustomerShippingCompanyEditor.ascx.designer.cs">
+      <DependentUpon>CustomerShippingCompanyEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\CustomerSupplierEditor.ascx.cs">
+      <DependentUpon>CustomerSupplierEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\CustomerSupplierEditor.ascx.designer.cs">
+      <DependentUpon>CustomerSupplierEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\CustomerShippingCompaniesGridView.ascx.cs">
+      <DependentUpon>CustomerShippingCompaniesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\CustomerShippingCompaniesGridView.ascx.designer.cs">
+      <DependentUpon>CustomerShippingCompaniesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\CustomerShippingCompaniesPage.aspx.cs">
+      <DependentUpon>CustomerShippingCompaniesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\CustomerShippingCompaniesPage.aspx.designer.cs">
+      <DependentUpon>CustomerShippingCompaniesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\CustomerSuppliersGridView.ascx.cs">
+      <DependentUpon>CustomerSuppliersGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\CustomerSuppliersGridView.ascx.designer.cs">
+      <DependentUpon>CustomerSuppliersGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\CustomerSuppliersPage.aspx.cs">
+      <DependentUpon>CustomerSuppliersPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\CustomerSuppliersPage.aspx.designer.cs">
+      <DependentUpon>CustomerSuppliersPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\CustomerTransportCompaniesGridView.ascx.cs">
+      <DependentUpon>CustomerTransportCompaniesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\CustomerTransportCompaniesGridView.ascx.designer.cs">
+      <DependentUpon>CustomerTransportCompaniesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\CustomerTransportCompaniesPage.aspx.cs">
+      <DependentUpon>CustomerTransportCompaniesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\CustomerTransportCompaniesPage.aspx.designer.cs">
+      <DependentUpon>CustomerTransportCompaniesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\CustomerTransportCompanyEditor.ascx.cs">
+      <DependentUpon>CustomerTransportCompanyEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\CustomerTransportCompanyEditor.ascx.designer.cs">
+      <DependentUpon>CustomerTransportCompanyEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\Captcha.ashx.cs">
+      <DependentUpon>Captcha.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Locations\LocationDrillDownPage.aspx.cs">
+      <DependentUpon>LocationDrillDownPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Locations\LocationDrillDownPage.aspx.designer.cs">
+      <DependentUpon>LocationDrillDownPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportHelper.cs" />
+    <Compile Include="StockAdjustments\StockAdjustmentEditor.ascx.cs">
+      <DependentUpon>StockAdjustmentEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockAdjustments\StockAdjustmentEditor.ascx.designer.cs">
+      <DependentUpon>StockAdjustmentEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\StockHistoryPage.aspx.cs">
+      <DependentUpon>StockHistoryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\StockHistoryPage.aspx.designer.cs">
+      <DependentUpon>StockHistoryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInPrintPage.aspx.cs">
+      <DependentUpon>StockInPrintPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInPrintPage.aspx.designer.cs">
+      <DependentUpon>StockInPrintPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemExactHeightsGridView.ascx.cs">
+      <DependentUpon>StockItemExactHeightsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemExactHeightsGridView.ascx.designer.cs">
+      <DependentUpon>StockItemExactHeightsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemHeightEditor.ascx.cs">
+      <DependentUpon>StockItemHeightEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemHeightEditor.ascx.designer.cs">
+      <DependentUpon>StockItemHeightEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemHeightsPage.aspx.cs">
+      <DependentUpon>StockItemHeightsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemHeightsPage.aspx.designer.cs">
+      <DependentUpon>StockItemHeightsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemLayerHeightEditor.ascx.cs">
+      <DependentUpon>StockItemLayerHeightEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemLayerHeightEditor.ascx.designer.cs">
+      <DependentUpon>StockItemLayerHeightEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemVersionEditor.ascx.cs">
+      <DependentUpon>StockItemVersionEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemVersionEditor.ascx.designer.cs">
+      <DependentUpon>StockItemVersionEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemVersionsGridView.ascx.cs">
+      <DependentUpon>StockItemVersionsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemVersionsGridView.ascx.designer.cs">
+      <DependentUpon>StockItemVersionsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemVersionPage.aspx.cs">
+      <DependentUpon>StockItemVersionPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemVersionPage.aspx.designer.cs">
+      <DependentUpon>StockItemVersionPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientHomeSearchGridView.ascx.cs">
+      <DependentUpon>ClientHomeSearchGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientHomeSearchGridView.ascx.designer.cs">
+      <DependentUpon>ClientHomeSearchGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\WarehousingClientHome.aspx.cs">
+      <DependentUpon>WarehousingClientHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\WarehousingClientHome.aspx.designer.cs">
+      <DependentUpon>WarehousingClientHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemCommodityCodeEditor.ascx.cs">
+      <DependentUpon>StockItemCommodityCodeEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemCommodityCodeEditor.ascx.designer.cs">
+      <DependentUpon>StockItemCommodityCodeEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemCommodityCodesGridView.ascx.cs">
+      <DependentUpon>StockItemCommodityCodesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemCommodityCodesGridView.ascx.designer.cs">
+      <DependentUpon>StockItemCommodityCodesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemCommodityCodePage.aspx.cs">
+      <DependentUpon>StockItemCommodityCodePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemCommodityCodePage.aspx.designer.cs">
+      <DependentUpon>StockItemCommodityCodePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System\CommodityCodeEditor.ascx.cs">
+      <DependentUpon>CommodityCodeEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System\CommodityCodeEditor.ascx.designer.cs">
+      <DependentUpon>CommodityCodeEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="System\CommodityCodesGridView.ascx.cs">
+      <DependentUpon>CommodityCodesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System\CommodityCodesGridView.ascx.designer.cs">
+      <DependentUpon>CommodityCodesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="System\CommodityCodesPage.aspx.cs">
+      <DependentUpon>CommodityCodesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System\CommodityCodesPage.aspx.designer.cs">
+      <DependentUpon>CommodityCodesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraDocketFields\DocketExtraFieldValuesGridView.ascx.cs">
+      <DependentUpon>DocketExtraFieldValuesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraDocketFields\DocketExtraFieldValuesGridView.ascx.designer.cs">
+      <DependentUpon>DocketExtraFieldValuesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraDocketFields\DocketExtraFieldsPage.aspx.cs">
+      <DependentUpon>DocketExtraFieldsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraDocketFields\DocketExtraFieldsPage.aspx.designer.cs">
+      <DependentUpon>DocketExtraFieldsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraDocketFields\DivisionExtraDocketFieldEditor.ascx.cs">
+      <DependentUpon>DivisionExtraDocketFieldEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraDocketFields\DivisionExtraDocketFieldEditor.ascx.designer.cs">
+      <DependentUpon>DivisionExtraDocketFieldEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraDocketFields\DivisionExtraDocketFieldsGridView.ascx.cs">
+      <DependentUpon>DivisionExtraDocketFieldsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraDocketFields\DivisionExtraDocketFieldsGridView.ascx.designer.cs">
+      <DependentUpon>DivisionExtraDocketFieldsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraDocketFields\DivisionExtraDocketFieldsPage.aspx.cs">
+      <DependentUpon>DivisionExtraDocketFieldsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraDocketFields\DivisionExtraDocketFieldsPage.aspx.designer.cs">
+      <DependentUpon>DivisionExtraDocketFieldsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraServices\ExtraServiceCodeEditor.ascx.cs">
+      <DependentUpon>ExtraServiceCodeEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraServices\ExtraServiceCodeEditor.ascx.designer.cs">
+      <DependentUpon>ExtraServiceCodeEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraServices\ExtraServiceCodesGridView.ascx.cs">
+      <DependentUpon>ExtraServiceCodesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraServices\ExtraServiceCodesGridView.ascx.designer.cs">
+      <DependentUpon>ExtraServiceCodesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraServices\ExtraServiceCodesPage.aspx.cs">
+      <DependentUpon>ExtraServiceCodesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraServices\ExtraServiceCodesPage.aspx.designer.cs">
+      <DependentUpon>ExtraServiceCodesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraServices\ExtraServicesPage.aspx.cs">
+      <DependentUpon>ExtraServicesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraServices\ExtraServicesPage.aspx.designer.cs">
+      <DependentUpon>ExtraServicesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraServices\ExtraServiceEditor.ascx.cs">
+      <DependentUpon>ExtraServiceEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraServices\ExtraServiceEditor.ascx.designer.cs">
+      <DependentUpon>ExtraServiceEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraServices\ExtraServicesGridView.ascx.cs">
+      <DependentUpon>ExtraServicesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraServices\ExtraServicesGridView.ascx.designer.cs">
+      <DependentUpon>ExtraServicesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraServices\DivisionExtraServicesPage.aspx.cs">
+      <DependentUpon>DivisionExtraServicesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraServices\DivisionExtraServicesPage.aspx.designer.cs">
+      <DependentUpon>DivisionExtraServicesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraServices\DivisionExtraServiceEditor.ascx.cs">
+      <DependentUpon>DivisionExtraServiceEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraServices\DivisionExtraServiceEditor.ascx.designer.cs">
+      <DependentUpon>DivisionExtraServiceEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraServices\DivisionExtraServicesGridView.ascx.cs">
+      <DependentUpon>DivisionExtraServicesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraServices\DivisionExtraServicesGridView.ascx.designer.cs">
+      <DependentUpon>DivisionExtraServicesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\CreditNoteGridView.ascx.cs">
+      <DependentUpon>CreditNoteGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\CreditNoteGridView.ascx.designer.cs">
+      <DependentUpon>CreditNoteGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Movements\MovementsPage.aspx.cs">
+      <DependentUpon>MovementsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Movements\MovementsPage.aspx.designer.cs">
+      <DependentUpon>MovementsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemUnitCostEditor.ascx.cs">
+      <DependentUpon>StockItemUnitCostEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemUnitCostEditor.ascx.designer.cs">
+      <DependentUpon>StockItemUnitCostEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemUnitCostsGridView.ascx.cs">
+      <DependentUpon>StockItemUnitCostsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemUnitCostsGridView.ascx.designer.cs">
+      <DependentUpon>StockItemUnitCostsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemUnitCostsPage.aspx.cs">
+      <DependentUpon>StockItemUnitCostsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemUnitCostsPage.aspx.designer.cs">
+      <DependentUpon>StockItemUnitCostsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientStockInPage.aspx.cs">
+      <DependentUpon>ClientStockInPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WarehousingClient\ClientStockInPage.aspx.designer.cs">
+      <DependentUpon>ClientStockInPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\CategoriesGridView.ascx.cs">
+      <DependentUpon>CategoriesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categories\CategoriesGridView.ascx.designer.cs">
+      <DependentUpon>CategoriesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\Categories.aspx.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categories\Categories.aspx.designer.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\CategoryEditor.ascx.cs">
+      <DependentUpon>CategoryEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categories\CategoryEditor.ascx.designer.cs">
+      <DependentUpon>CategoryEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\DivisionBuildingUnitEditor.ascx.cs">
+      <DependentUpon>DivisionBuildingUnitEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\DivisionBuildingUnitEditor.ascx.designer.cs">
+      <DependentUpon>DivisionBuildingUnitEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\DivisionBuildingUnitBaysPage.aspx.cs">
+      <DependentUpon>DivisionBuildingUnitBaysPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\DivisionBuildingUnitBaysPage.aspx.designer.cs">
+      <DependentUpon>DivisionBuildingUnitBaysPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\ExportToAccounts.aspx.cs">
+      <DependentUpon>ExportToAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\ExportToAccounts.aspx.designer.cs">
+      <DependentUpon>ExportToAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\InvoiceEditor.ascx.cs">
+      <DependentUpon>InvoiceEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\InvoiceEditor.ascx.designer.cs">
+      <DependentUpon>InvoiceEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Invoicing\InvoiceGridView.ascx.cs">
+      <DependentUpon>InvoiceGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoicing\InvoiceGridView.ascx.designer.cs">
+      <DependentUpon>InvoiceGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PalletStatus\PalletStatusGridView.ascx.cs">
+      <DependentUpon>PalletStatusGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PalletStatus\PalletStatusGridView.ascx.designer.cs">
+      <DependentUpon>PalletStatusGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="PalletStatus\PalletStatusPage.aspx.cs">
+      <DependentUpon>PalletStatusPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PalletStatus\PalletStatusPage.aspx.designer.cs">
+      <DependentUpon>PalletStatusPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\HistoricalMovementReportPage.aspx.cs">
+      <DependentUpon>HistoricalMovementReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\HistoricalMovementReportPage.aspx.designer.cs">
+      <DependentUpon>HistoricalMovementReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\LocationReportPage.aspx.cs">
+      <DependentUpon>LocationReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\LocationReportPage.aspx.designer.cs">
+      <DependentUpon>LocationReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportPrinter.ascx.cs">
+      <DependentUpon>ReportPrinter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportPrinter.ascx.designer.cs">
+      <DependentUpon>ReportPrinter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryAddresses\ReturnAddressPage.aspx.cs">
+      <DependentUpon>ReturnAddressPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryAddresses\ReturnAddressPage.aspx.designer.cs">
+      <DependentUpon>ReturnAddressPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryAddresses\ReturnAddressGridView.ascx.cs">
+      <DependentUpon>ReturnAddressGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryAddresses\ReturnAddressGridView.ascx.designer.cs">
+      <DependentUpon>ReturnAddressGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryAddresses\ReturnAddressEditor.ascx.cs">
+      <DependentUpon>ReturnAddressEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryAddresses\ReturnAddressEditor.ascx.designer.cs">
+      <DependentUpon>ReturnAddressEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInsAllGridView.ascx.cs">
+      <DependentUpon>StockInsAllGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInsAllGridView.ascx.designer.cs">
+      <DependentUpon>StockInsAllGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInsAllPage.aspx.cs">
+      <DependentUpon>StockInsAllPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInsAllPage.aspx.designer.cs">
+      <DependentUpon>StockInsAllPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockOrder\StockOrdersAllPage.aspx.cs">
+      <DependentUpon>StockOrdersAllPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockOrder\StockOrdersAllPage.aspx.designer.cs">
+      <DependentUpon>StockOrdersAllPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockOrder\StockOrdersAllGridView.ascx.cs">
+      <DependentUpon>StockOrdersAllGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockOrder\StockOrdersAllGridView.ascx.designer.cs">
+      <DependentUpon>StockOrdersAllGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Locations\FixedLocationEditor.ascx.cs">
+      <DependentUpon>FixedLocationEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Locations\FixedLocationEditor.ascx.designer.cs">
+      <DependentUpon>FixedLocationEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Locations\FixedLocations.aspx.cs">
+      <DependentUpon>FixedLocations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Locations\FixedLocations.aspx.designer.cs">
+      <DependentUpon>FixedLocations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Locations\FixedLocationsGridView.ascx.cs">
+      <DependentUpon>FixedLocationsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Locations\FixedLocationsGridView.ascx.designer.cs">
+      <DependentUpon>FixedLocationsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\DivisionBuildingUnits.aspx.cs">
+      <DependentUpon>DivisionBuildingUnits.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\DivisionBuildingUnits.aspx.designer.cs">
+      <DependentUpon>DivisionBuildingUnits.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\DivisionBuildingUnitsGridView.ascx.cs">
+      <DependentUpon>DivisionBuildingUnitsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\DivisionBuildingUnitsGridView.ascx.designer.cs">
+      <DependentUpon>DivisionBuildingUnitsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryAddresses\DeliveryAddressEditor.ascx.cs">
+      <DependentUpon>DeliveryAddressEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryAddresses\DeliveryAddressEditor.ascx.designer.cs">
+      <DependentUpon>DeliveryAddressEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryAddresses\DeliveryAddressesGridView.ascx.cs">
+      <DependentUpon>DeliveryAddressesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryAddresses\DeliveryAddressesGridView.ascx.designer.cs">
+      <DependentUpon>DeliveryAddressesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DeliveryAddresses\DeliveryAddresses.aspx.cs">
+      <DependentUpon>DeliveryAddresses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeliveryAddresses\DeliveryAddresses.aspx.designer.cs">
+      <DependentUpon>DeliveryAddresses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ManageUser.aspx.cs">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\ManageUser.aspx.designer.cs">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\PersonEditor.ascx.cs">
+      <DependentUpon>PersonEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\PersonEditor.ascx.designer.cs">
+      <DependentUpon>PersonEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transport\ShippingCompanyEditor.ascx.cs">
+      <DependentUpon>ShippingCompanyEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transport\ShippingCompanyEditor.ascx.designer.cs">
+      <DependentUpon>ShippingCompanyEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transport\ShippingCompaniesGridView.ascx.cs">
+      <DependentUpon>ShippingCompaniesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transport\ShippingCompaniesGridView.ascx.designer.cs">
+      <DependentUpon>ShippingCompaniesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transport\ShippingCompanies.aspx.cs">
+      <DependentUpon>ShippingCompanies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transport\ShippingCompanies.aspx.designer.cs">
+      <DependentUpon>ShippingCompanies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInPalletMovementsGridView.ascx.cs">
+      <DependentUpon>StockInPalletMovementsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInPalletMovementsGridView.ascx.designer.cs">
+      <DependentUpon>StockInPalletMovementsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInPalletWorksOrdersGridView.ascx.cs">
+      <DependentUpon>StockInPalletWorksOrdersGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInPalletWorksOrdersGridView.ascx.designer.cs">
+      <DependentUpon>StockInPalletWorksOrdersGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInPalletsGridView.ascx.cs">
+      <DependentUpon>StockInPalletsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInPalletsGridView.ascx.designer.cs">
+      <DependentUpon>StockInPalletsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\ContainerInGridView.ascx.cs">
+      <DependentUpon>ContainerInGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\ContainerInGridView.ascx.designer.cs">
+      <DependentUpon>ContainerInGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockIns.aspx.cs">
+      <DependentUpon>StockIns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockIns.aspx.designer.cs">
+      <DependentUpon>StockIns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInProcessingGridView.ascx.cs">
+      <DependentUpon>StockInProcessingGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInProcessingGridView.ascx.designer.cs">
+      <DependentUpon>StockInProcessingGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\ContainerInProcessing.aspx.cs">
+      <DependentUpon>ContainerInProcessing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\ContainerInProcessing.aspx.designer.cs">
+      <DependentUpon>ContainerInProcessing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\UploadHandler.ashx.cs">
+      <DependentUpon>UploadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\LoadingBayEditor.ascx.cs">
+      <DependentUpon>LoadingBayEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\LoadingBayEditor.ascx.designer.cs">
+      <DependentUpon>LoadingBayEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\LoadingBaysGridView.ascx.cs">
+      <DependentUpon>LoadingBaysGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\LoadingBaysGridView.ascx.designer.cs">
+      <DependentUpon>LoadingBaysGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Buildings\ManageSetDownAreas.aspx.cs">
+      <DependentUpon>ManageSetDownAreas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Buildings\ManageSetDownAreas.aspx.designer.cs">
+      <DependentUpon>ManageSetDownAreas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPages\HiContentMaster.Master.cs">
+      <DependentUpon>HiContentMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\HiContentMaster.Master.designer.cs">
+      <DependentUpon>HiContentMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemGroupRuleEditor.ascx.cs">
+      <DependentUpon>StockItemGroupRuleEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemGroupRuleEditor.ascx.designer.cs">
+      <DependentUpon>StockItemGroupRuleEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemGroupRulesGridView.ascx.cs">
+      <DependentUpon>StockItemGroupRulesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemGroupRulesGridView.ascx.designer.cs">
+      <DependentUpon>StockItemGroupRulesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemSplitRuleEditor.ascx.cs">
+      <DependentUpon>StockItemSplitRuleEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemSplitRuleEditor.ascx.designer.cs">
+      <DependentUpon>StockItemSplitRuleEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemSplitRulesGridView.ascx.cs">
+      <DependentUpon>StockItemSplitRulesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemSplitRulesGridView.ascx.designer.cs">
+      <DependentUpon>StockItemSplitRulesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StockIn\StockInPage.aspx.cs">
+      <DependentUpon>StockInPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StockIn\StockInPage.aspx.designer.cs">
+      <DependentUpon>StockInPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemEditor.ascx.cs">
+      <DependentUpon>StockItemEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemEditor.ascx.designer.cs">
+      <DependentUpon>StockItemEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItemsGridView.ascx.cs">
+      <DependentUpon>StockItemsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItemsGridView.ascx.designer.cs">
+      <DependentUpon>StockItemsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\StockItems.aspx.cs">
+      <DependentUpon>StockItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stock\StockItems.aspx.designer.cs">
+      <DependentUpon>StockItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers\SupplierEditor.ascx.cs">
+      <DependentUpon>SupplierEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Suppliers\SupplierEditor.ascx.designer.cs">
+      <DependentUpon>SupplierEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers\SuppliersGridView.ascx.cs">
+      <DependentUpon>SuppliersGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Suppliers\SuppliersGridView.ascx.designer.cs">
+      <DependentUpon>SuppliersGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Suppliers\Suppliers.aspx.cs">
+      <DependentUpon>Suppliers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Suppliers\Suppliers.aspx.designer.cs">
+      <DependentUpon>Suppliers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common.cs" />
+    <Compile Include="Contacts\ContactEditor.ascx.cs">
+      <DependentUpon>ContactEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contacts\ContactEditor.ascx.designer.cs">
+      <DependentUpon>ContactEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts\Contacts.aspx.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contacts\Contacts.aspx.designer.cs">
+      <DependentUpon>Contacts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contacts\ContactsGridView.ascx.cs">
+      <DependentUpon>ContactsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contacts\ContactsGridView.ascx.designer.cs">
+      <DependentUpon>ContactsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\Customers.aspx.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\Customers.aspx.designer.cs">
+      <DependentUpon>Customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\Divisions.aspx.cs">
+      <DependentUpon>Divisions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\Divisions.aspx.designer.cs">
+      <DependentUpon>Divisions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\DivisionsGridView.ascx.cs">
+      <DependentUpon>DivisionsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\DivisionsGridView.ascx.designer.cs">
+      <DependentUpon>DivisionsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\DivisionEditor.ascx.cs">
+      <DependentUpon>DivisionEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customers\DivisionEditor.ascx.designer.cs">
+      <DependentUpon>DivisionEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\GenericAutoComplete.ashx.cs">
+      <DependentUpon>GenericAutoComplete.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="handlers\STAajax.ashx.cs">
+      <DependentUpon>STAajax.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOff.aspx.cs">
+      <DependentUpon>LogOff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOff.aspx.designer.cs">
+      <DependentUpon>LogOff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transport\TransportCompanyEditor.ascx.cs">
+      <DependentUpon>TransportCompanyEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transport\TransportCompanyEditor.ascx.designer.cs">
+      <DependentUpon>TransportCompanyEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transport\TransportCompaniesGridView.ascx.cs">
+      <DependentUpon>TransportCompaniesGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transport\TransportCompaniesGridView.ascx.designer.cs">
+      <DependentUpon>TransportCompaniesGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transport\TransportCompanies.aspx.cs">
+      <DependentUpon>TransportCompanies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transport\TransportCompanies.aspx.designer.cs">
+      <DependentUpon>TransportCompanies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UsersGridView.ascx.cs">
+      <DependentUpon>UsersGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\UsersGridView.ascx.designer.cs">
+      <DependentUpon>UsersGridView.ascx</DependentUpon>
+    </Compile>
+    <Content Include="images\Building.png" />
+    <Content Include="images\BuildingUnit.png" />
+    <Content Include="images\BuildingUnitColumn.png" />
+    <Content Include="images\BuildingUnitRow.png" />
+    <Content Include="images\Contact.png" />
+    <Content Include="images\Division.png" />
+    <Content Include="LogOff.aspx" />
+    <Content Include="Menu.ashx" />
+    <Content Include="Transport\TransportCompanyEditor.ascx" />
+    <Content Include="Transport\TransportCompaniesGridView.ascx" />
+    <Content Include="Transport\TransportCompanies.aspx" />
+    <Content Include="Security\UsersGridView.ascx" />
+    <Content Include="Reports\StockMovements.rpx" />
+    <Content Include="Reports\StockTransferSummary.rpx" />
+    <Content Include="Reports\StockOutPackingList.rpx" />
+    <Content Include="Reports\HoneywellClientPalletsList.rpx" />
+    <Content Include="Reports\EachBarcodeLabelAbbot.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\StockOutPackingListAbbot.rpx" />
+    <Content Include="Reports\STAWMSFloorLocationLabel.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\STAWMSRackingLabel_Double.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="UserGuides\testdoc.pdf" />
+    <Content Include="Reports\OrnuaPackingList.rpx" />
+    <Content Include="Reports\WorksOrderPhysicalChecks.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\SmurfitPackingList.rpx" />
+    <Content Include="Reports\StockOutDocket - Copy.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\HistoricalStockMovementWithDescription.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\CurrentStockLevels.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\SOP\SOP088.rpx" />
+    <Content Include="Reports\GoodsOutReport.rpx" />
+    <Content Include="Reports\GoodsInReport.rpx" />
+    <Content Include="Reports\LocationReportLandscape.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\StockOutDocketPortrait.rpx" />
+    <Content Include="Reports\GlanbiaBarcodeLabelA5.rpx" />
+    <Content Include="Reports\StockOutHistory.rpx" />
+    <Content Include="Reports\WorksOrderMovement - Copy.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\StockOutDocketDaily.rpx" />
+    <Content Include="Reports\StockInDocketDaily.rpx" />
+    <Content Include="Reports\UserAccountAudit.rpx" />
+    <Content Include="Reports\RexelStockOutPackingList.rpx" />
+    <Content Include="Reports\WorkOrderType.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\DistributionLabel_AnPost.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\GroupStockInHistory.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\GroupStockInDocket.rpx" />
+    <Content Include="Reports\StockItemAllergenCode.rpx" />
+    <Content Include="Reports\DistributionOrderHistory.rpx" />
+    <Content Include="Reports\DistributionReturns.rpx" />
+    <Content Include="Reports\DistributionWeeklyCharges.rpx" />
+    <Content Include="Reports\HSEPackingSlip.rpx" />
+    <Content Include="Reports\LinguaphoneStockOutPackagingList.rpx" />
+    <Content Include="Reports\HistoricalStockMovementSummary.rpx">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Reports\DistributionWorksOrderMovement.rpx" />
+    <Content Include="Reports\SealReport.rpx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Captcha\" />
+    <Folder Include="Charges\" />
+    <Folder Include="GeneratedReports\DistributionLabels\" />
+    <Folder Include="images\CustomerImages\Div735\" />
+    <Folder Include="javascript\jquery\1_10_2\" />
+    <Folder Include="javascript\jquery\timeout-dialogue\imgs\" />
+    <Folder Include="javascript\jquery\timeout-dialogue\js\" />
+    <Folder Include="javascript\V0002\" />
+    <Folder Include="javascript\V0003\" />
+    <Folder Include="javascript\V0004\" />
+    <Folder Include="javascript\V0005\" />
+    <Folder Include="javascript\V0006\" />
+    <Folder Include="javascript\V0007\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\STAWMSBusinessLogicLayer\STAWMSBusinessLogicLayer.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+ 
