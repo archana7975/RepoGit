@@ -1,0 +1,1617 @@
+CREATE TABLE [dbo].[tblCustomerGeneratedBarcodes](
+	[CustomerGeneratedBarcodePK] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerFK] [int] NOT NULL,
+	[Barcode] [nvarchar](200) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblCustomerGeneratedBarcodes] PRIMARY KEY CLUSTERED 
+(
+	[CustomerGeneratedBarcodePK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+CREATE TABLE [dbo].[tblCustomerDomains](
+	[Domainpk] [int] IDENTITY(1,1) NOT NULL,
+	[Domain] [varchar](255) NULL,
+	[Customerfk] [varchar](255) NULL,
+	[Logo] [varchar](255) NULL,
+	[SplashPage] [varchar](255) NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[Domainpk] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+CREATE TABLE [dbo].[tblCustomerDocketIdentifications](
+	[CustomerDocketIdentificationPK] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerFK] [int] NOT NULL,
+	[DocketTypeFK] [int] NOT NULL,
+	[FieldFK] [int] NOT NULL,
+	[Prefix] [nvarchar](200) NOT NULL,
+	[Field2FK] [int] NOT NULL,
+	[Prefix2] [nvarchar](200) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+	[Field3FK] [int] NOT NULL,
+	[Prefix3] [nvarchar](200) NOT NULL,
+ CONSTRAINT [PK_tblCustomerDocketIdentifications] PRIMARY KEY CLUSTERED 
+(
+	[CustomerDocketIdentificationPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[tblCustomerDocketIdentifications] ADD  CONSTRAINT [DF_tblCustomerDocketIdentifications_Field3FK]  DEFAULT ((-1)) FOR [Field3FK]
+GO
+
+ALTER TABLE [dbo].[tblCustomerDocketIdentifications] ADD  CONSTRAINT [DF_tblCustomerDocketIdentifications_Prefix3]  DEFAULT (' ') FOR [Prefix3]
+GO
+CREATE TABLE [dbo].[tblCustomerDistributionCountries](
+	[CustomerDistributionCountryPK] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerFK] [int] NOT NULL,
+	[CountryFK] [int] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblCustomerDistributionCountries] PRIMARY KEY CLUSTERED 
+(
+	[CustomerDistributionCountryPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[tblCustomers](
+	[CustomerPK] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerName] [nvarchar](200) NOT NULL,
+	[CustomerCode] [nvarchar](100) NOT NULL,
+	[Address1] [nvarchar](200) NOT NULL,
+	[Address2] [nvarchar](200) NOT NULL,
+	[Address3] [nvarchar](200) NOT NULL,
+	[Address4] [nvarchar](200) NOT NULL,
+	[Address5] [nvarchar](200) NOT NULL,
+	[TelephoneNumber] [nvarchar](100) NOT NULL,
+	[FaxNumber] [nvarchar](100) NOT NULL,
+	[MainContactFK] [int] NOT NULL,
+	[InvoiceContactFK] [int] NOT NULL,
+	[InvoiceAuthorisationCode] [nvarchar](200) NOT NULL,
+	[InvoiceFrequencyFK] [int] NOT NULL,
+	[InvoiceMethodFK] [int] NOT NULL,
+	[CustomInvoiceTitle] [nvarchar](100) NOT NULL,
+	[CustomInvoiceValue] [nvarchar](100) NOT NULL,
+	[PaymentTerms] [nvarchar](200) NOT NULL,
+	[LastInvoiceDate] [datetime] NOT NULL,
+	[VatCodeFK] [int] NOT NULL,
+	[DepartmentFK] [int] NOT NULL,
+	[HandlingInCharge] [decimal](18, 3) NOT NULL,
+	[HandlingInEachesTypeFK] [int] NOT NULL,
+	[HandlingInUnitTypeFK] [int] NOT NULL,
+	[HandlingInEachesNumber] [decimal](18, 3) NOT NULL,
+	[HandlingInUnitsNumber] [decimal](18, 3) NOT NULL,
+	[HandlingInChargeResultingPallets] [bit] NOT NULL,
+	[HandlingOutCharge] [decimal](18, 3) NOT NULL,
+	[HandlingOutEachesTypeFK] [int] NOT NULL,
+	[HandlingOutUnitTypeFK] [int] NOT NULL,
+	[HandlingOutEachesNumber] [decimal](18, 3) NOT NULL,
+	[HandlingOutUnitsNumber] [decimal](18, 3) NOT NULL,
+	[HandlingOutChargeResultingPallets] [bit] NOT NULL,
+	[RequirePalletNumber] [bit] NOT NULL,
+	[RequireExpiryDate] [bit] NOT NULL,
+	[RequireManufactureDate] [bit] NOT NULL,
+	[RequireBestBefore] [bit] NOT NULL,
+	[RequireDateOfReceipt] [bit] NOT NULL,
+	[RequireCustomerBarcodeForDiscrepancies] [bit] NOT NULL,
+	[AllowSplitEaches] [bit] NOT NULL,
+	[StockInLocationStoredProcedure] [nvarchar](500) NOT NULL,
+	[StockOrderLocationStoredProcedure] [nvarchar](500) NOT NULL,
+	[StyleSheet] [nvarchar](200) NOT NULL,
+	[DistributionLogo] [nvarchar](100) NOT NULL,
+	[DistributionWelcomeMessage] [nvarchar](1000) NOT NULL,
+	[DistributionOrderInterfaceVersionFK] [int] NOT NULL,
+	[DistributionDefaultTransportCompanyFK] [int] NOT NULL,
+	[WarehousingClientControlDeliveryAddresses] [bit] NOT NULL,
+	[WarehousingClientStockOrderAllowPalletInput] [bit] NOT NULL,
+	[WarehousingClientStockOrderAllowEachInput] [bit] NOT NULL,
+	[WarehousingClientStockOrderAllowUnitInput] [bit] NOT NULL,
+	[AllowNewContainerInsFromHandheld] [bit] NOT NULL,
+	[ManageStock] [bit] NOT NULL,
+	[ManageStockAcknowledgements] [bit] NOT NULL,
+	[ManageBatch] [bit] NOT NULL,
+	[ReconcileInventory] [bit] NOT NULL,
+	[ImportContainerIns] [bit] NOT NULL,
+	[ImportContainerInEdits] [bit] NOT NULL,
+	[ContainerInMaterialXmlPath] [nvarchar](300) NOT NULL,
+	[ImportContainerOuts] [bit] NOT NULL,
+	[ExportContainerInAcknowledgement] [bit] NOT NULL,
+	[ManageStockOrderRejections] [bit] NOT NULL,
+	[ExternalDatabase] [nvarchar](200) NOT NULL,
+	[NextBatch] [int] NOT NULL,
+	[MinimumInvoiceCharge] [decimal](18, 3) NOT NULL,
+	[MinimumStorageCharge] [decimal](18, 3) NOT NULL,
+	[AllowMixedPalletsOnStockOut] [int] NOT NULL,
+	[AllowMixedPalletsOnStockIn] [int] NOT NULL,
+	[InvoiceByCustomer] [bit] NOT NULL,
+	[QueuePalletStatusMessages] [bit] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+	[ManagePalletStatus] [bit] NOT NULL,
+	[ExportPalletStatusMasterAcknowledgements] [bit] NOT NULL,
+	[ExportBatchAcknowledgements] [bit] NOT NULL,
+	[ImportContainerOutReleaseChecks] [bit] NOT NULL,
+	[ExportContainerOutReleaseCheckAcknowledgements] [bit] NOT NULL,
+	[EnableIntegration] [bit] NOT NULL,
+	[Integrated] [bit] NULL,
+	[InvoiceExportWithCustomerCode] [bit] NOT NULL,
+	[RequireDailyProcessingInboundChecks] [bit] NOT NULL,
+	[RequireDailyProcessingOutboundChecks] [bit] NOT NULL,
+	[RequireDailyProcessingInventoryChecks] [bit] NOT NULL,
+	[IdentifyDivisionViaStorageLocation] [bit] NOT NULL,
+	[StockOutClientPickTypeFK] [int] NOT NULL,
+	[AllowInternalTransfer] [bit] NOT NULL,
+	[Active] [bit] NOT NULL,
+	[InvoiceStorageCharge] [bit] NOT NULL,
+	[InvoiceExtraServiceCharge] [bit] NOT NULL,
+	[InvoiceRecurringCharge] [bit] NOT NULL,
+	[InvoiceDistributionCharge] [bit] NOT NULL,
+	[RecurringChargeFrequencyFK] [int] NOT NULL,
+	[InvoiceGroupByCategory] [bit] NOT NULL,
+	[ReprocessFile] [bit] NOT NULL,
+	[EnableDistributionOverdueAlert] [bit] NOT NULL,
+	[DistributionQueueImportPending] [bit] NOT NULL,
+	[AllowIntegratedStockOutTransfers] [bit] NOT NULL,
+	[CustomerTypeFK] [int] NOT NULL,
+	[DayCutOff] [int] NOT NULL,
+	[TimeCutOff] [time](0) NOT NULL,
+	[DefaultInvoiceEmailSubject] [nvarchar](255) NULL,
+	[CustomSageCode] [varchar](200) NULL,
+	[ContractRenewalDate] [date] NULL,
+	[RenewalReminderInterval] [int] NULL,
+	[RenewalAlertEmail] [nvarchar](400) NULL,
+	[DefaultDeliveryDurationMinutes] [int] NOT NULL,
+	[ImageName] [nvarchar](255) NULL,
+ CONSTRAINT [PK_tblCustomers] PRIMARY KEY CLUSTERED 
+(
+	[CustomerPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_Telephone]  DEFAULT ((123)) FOR [TelephoneNumber]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_AllowNewContainerInsFromHandheld]  DEFAULT (CONVERT([bit],(0),(0))) FOR [AllowNewContainerInsFromHandheld]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF__tblCustom__Manag__448B0BA5]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ManageBatch]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF__tblCustom__Recon__46735417]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ReconcileInventory]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF__tblCustom__Impor__212CC0CF]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ImportContainerInEdits]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_ManageStockOrderRejections]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ManageStockOrderRejections]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF__tblCustom__Exter__47677850]  DEFAULT ('') FOR [ExternalDatabase]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_NextBatch]  DEFAULT ((1)) FOR [NextBatch]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_MinimumInvoiceCharge]  DEFAULT ((0.000)) FOR [MinimumInvoiceCharge]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_MinimumStorageCharge]  DEFAULT ((0.000)) FOR [MinimumStorageCharge]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_AllowMixedPallets]  DEFAULT ((3)) FOR [AllowMixedPalletsOnStockOut]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_AllowMixedPalletsOnStockIn]  DEFAULT ((3)) FOR [AllowMixedPalletsOnStockIn]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_InvoiceByCustomer]  DEFAULT (CONVERT([bit],(0),(0))) FOR [InvoiceByCustomer]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_QueuePalletStatusMessages]  DEFAULT (CONVERT([bit],(0),(0))) FOR [QueuePalletStatusMessages]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_IsArchived]  DEFAULT ((123)) FOR [IsArchived]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF__tblCustom__Manag__09BF4B92]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ManagePalletStatus]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_ExportPalletStatusMasterAcknowledgements]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportPalletStatusMasterAcknowledgements]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF__tblCustom__Expor__0DE4E231]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportBatchAcknowledgements]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF__tblCustom__Impor__0ED9066A]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ImportContainerOutReleaseChecks]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF__tblCustom__Expor__0FCD2AA3]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportContainerOutReleaseCheckAcknowledgements]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  DEFAULT ((0)) FOR [EnableIntegration]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  DEFAULT ((0)) FOR [Integrated]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_InvoiceExportWithCustomerCode]  DEFAULT ((1)) FOR [InvoiceExportWithCustomerCode]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_RequireDailyProcessingInboundChecks]  DEFAULT ((0)) FOR [RequireDailyProcessingInboundChecks]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_RequireDailyProcessingOutboundChecks]  DEFAULT ((0)) FOR [RequireDailyProcessingOutboundChecks]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_RequireDailyProcessingInventoryChecks]  DEFAULT ((0)) FOR [RequireDailyProcessingInventoryChecks]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_IdentifyDivisionViaStorageLocation]  DEFAULT ((0)) FOR [IdentifyDivisionViaStorageLocation]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_StockOutClientPickTypeFK]  DEFAULT ((-1)) FOR [StockOutClientPickTypeFK]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_AllowInternalTransfer]  DEFAULT ((0)) FOR [AllowInternalTransfer]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_Active]  DEFAULT (CONVERT([bit],(0))) FOR [Active]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_InvoiceStorageCharge]  DEFAULT (CONVERT([bit],(1))) FOR [InvoiceStorageCharge]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_InvoiceExtraServiceCharge]  DEFAULT (CONVERT([bit],(1))) FOR [InvoiceExtraServiceCharge]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_InvoiceRecurringCharge]  DEFAULT (CONVERT([bit],(1))) FOR [InvoiceRecurringCharge]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_InvoiceDistributionCharge]  DEFAULT (CONVERT([bit],(0))) FOR [InvoiceDistributionCharge]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_RecurringChargeFrequencyFK]  DEFAULT ((-1)) FOR [RecurringChargeFrequencyFK]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_InvoiceGroupByCategory]  DEFAULT (CONVERT([bit],(0))) FOR [InvoiceGroupByCategory]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_ReprocessFile]  DEFAULT ((0)) FOR [ReprocessFile]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_EnableDistributionOverdueAlert]  DEFAULT ((0)) FOR [EnableDistributionOverdueAlert]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_DistributionQueueImportPending]  DEFAULT ((0)) FOR [DistributionQueueImportPending]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_AllowIntegratedStockOutTransfers]  DEFAULT ((0)) FOR [AllowIntegratedStockOutTransfers]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_tblCustomers_CustomerTypeFK]  DEFAULT ((4)) FOR [CustomerTypeFK]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  DEFAULT ((2)) FOR [DayCutOff]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  DEFAULT ('10:00:00') FOR [TimeCutOff]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  DEFAULT (' ') FOR [CustomSageCode]
+GO
+
+ALTER TABLE [dbo].[tblCustomers] ADD  CONSTRAINT [DF_Customer_DefaultDeliveryDurationMinutes]  DEFAULT ((120)) FOR [DefaultDeliveryDurationMinutes]
+GO
+
+
+
+
+CREATE TABLE [dbo].[tblCustomerScheduledTask](
+	[CustomerScheduledTaskPK] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerFK] [int] NOT NULL,
+	[ScheduledTaskTypeFK] [int] NOT NULL,
+	[EmailAddress] [nvarchar](200) NOT NULL,
+	[LastProcessedDate] [datetime] NOT NULL,
+	[LastProcessedFKS] [nvarchar](200) NOT NULL,
+	[CustomEmailMessage] [nvarchar](500) NOT NULL,
+	[Enabled] [bit] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblCustomersScheduledTask] PRIMARY KEY CLUSTERED 
+(
+	[CustomerScheduledTaskPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[tblCustomerScheduledTask] ADD  CONSTRAINT [DF_tblCustomerScheduledTask_ScheduledTaskFixTypeFK]  DEFAULT ((1)) FOR [ScheduledTaskTypeFK]
+GO
+
+
+
+CREATE TABLE [dbo].[tblCustomerShippingCompanies](
+	[CustomerShippingCompanyPK] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerFK] [int] NOT NULL,
+	[ShippingCompanyFK] [int] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblCustomerShippingCompanies] PRIMARY KEY CLUSTERED 
+(
+	[CustomerShippingCompanyPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+CREATE TABLE [dbo].[tblCustomerSpecialStockTypes](
+	[CustomerSpecialStockTypePK] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerFK] [int] NOT NULL,
+	[SpecialStockTypeFK] [int] NOT NULL,
+	[CustomText] [nvarchar](400) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblCustomerSpecialStockTypes] PRIMARY KEY CLUSTERED 
+(
+	[CustomerSpecialStockTypePK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+CREATE TABLE [dbo].[tblCustomerStorageRetainers](
+	[CustomerStorageRetainerPK] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerFK] [int] NOT NULL,
+	[BuildingFK] [int] NOT NULL,
+	[SpacesRetained] [int] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblCustomerStorageRetainers] PRIMARY KEY CLUSTERED 
+(
+	[CustomerStorageRetainerPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[tblCustomerSuppliers](
+	[CustomerSupplierPK] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerFK] [int] NOT NULL,
+	[SupplierFK] [int] NOT NULL,
+	[CustomerReference] [nvarchar](200) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblCustomerSuppliers] PRIMARY KEY CLUSTERED 
+(
+	[CustomerSupplierPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+CREATE TABLE [dbo].[tblCustomerTransportCompanies](
+	[CustomerTransportCompanyPK] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerFK] [int] NOT NULL,
+	[TransportCompanyFK] [int] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblCustomerTransportCompanies] PRIMARY KEY CLUSTERED 
+(
+	[CustomerTransportCompanyPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[tblCustomerXmlExportDocumentNodes](
+	[CustomerXmlExportDocumentNodePK] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerXmlExportDocumentFK] [int] NOT NULL,
+	[Repeating] [bit] NOT NULL,
+	[ParentCustomerXmlExportDocumentNodeFK] [int] NOT NULL,
+	[NodeReference] [nvarchar](1000) NOT NULL,
+	[Attribute] [nvarchar](500) NOT NULL,
+	[ParentNodeReference] [nvarchar](1000) NOT NULL,
+	[ValueFieldFK] [int] NOT NULL,
+	[HardValue] [nvarchar](1000) NOT NULL,
+	[StoredProcedure] [nvarchar](500) NOT NULL,
+	[StoredProcedureFieldName] [nvarchar](100) NOT NULL,
+	[SQLForLayer] [nvarchar](max) NOT NULL,
+	[SQLForLayerCheck] [nvarchar](max) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblCustomerXmlExportDocumentNodes] PRIMARY KEY CLUSTERED 
+(
+	[CustomerXmlExportDocumentNodePK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[tblCustomerXmlExportDocumentNodes] ADD  CONSTRAINT [DF__tblCustom__Store__42A2C333]  DEFAULT ('') FOR [StoredProcedureFieldName]
+GO
+
+ALTER TABLE [dbo].[tblCustomerXmlExportDocumentNodes] ADD  CONSTRAINT [DF_tblCustomerXmlExportDocumentNodes_SQLForLayer]  DEFAULT ('') FOR [SQLForLayer]
+GO
+
+ALTER TABLE [dbo].[tblCustomerXmlExportDocumentNodes] ADD  CONSTRAINT [DF_tblCustomerXmlExportDocumentNodes_SQLForLayerCheck]  DEFAULT ('') FOR [SQLForLayerCheck]
+GO
+
+
+
+CREATE TABLE [dbo].[tblCustomerXmlExportDocuments](
+	[CustomerXmlExportDocumentPK] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerFK] [int] NOT NULL,
+	[XmlExportDocumentFK] [int] NOT NULL,
+	[DocumentTemplate] [nvarchar](500) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblCustomerXmlExportDocuments] PRIMARY KEY CLUSTERED 
+(
+	[CustomerXmlExportDocumentPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[tblCustomerXmlImportDocumentNodes](
+	[CustomerXmlImportDocumentNodePK] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerXmlImportDocumentFK] [int] NOT NULL,
+	[Repeating] [bit] NOT NULL,
+	[ParentCustomerXmlImportDocumentNodeFK] [int] NOT NULL,
+	[NodeReference] [nvarchar](1000) NOT NULL,
+	[ValueFieldFK] [int] NOT NULL,
+	[HardValue] [nvarchar](1000) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblCustomerXmlImportDocumentNodes] PRIMARY KEY CLUSTERED 
+(
+	[CustomerXmlImportDocumentNodePK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+CREATE TABLE [dbo].[tblCustomerXmlImportDocuments](
+	[CustomerXmlImportDocumentPK] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerFK] [int] NOT NULL,
+	[XmlImportDocumentFK] [int] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblCustomerXmlImportDocuments] PRIMARY KEY CLUSTERED 
+(
+	[CustomerXmlImportDocumentPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+CREATE TABLE [dbo].[tblDeliveryAddresses](
+	[DeliveryAddressPK] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerFK] [int] NOT NULL,
+	[Address1] [nvarchar](200) NOT NULL,
+	[Address2] [nvarchar](200) NOT NULL,
+	[Address3] [nvarchar](200) NOT NULL,
+	[Address4] [nvarchar](200) NOT NULL,
+	[Address5] [nvarchar](200) NOT NULL,
+	[CountyFK] [int] NOT NULL,
+	[CountryFK] [int] NOT NULL,
+	[TelephoneNumber] [nvarchar](100) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+	[DeliveryAddressTypeFK] [int] NOT NULL,
+ CONSTRAINT [PK_tblDeliveryAddresses] PRIMARY KEY CLUSTERED 
+(
+	[DeliveryAddressPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[tblDeliveryAddresses] ADD  CONSTRAINT [DF_tblDeliveryAddresses_DeliveryAddressTypeFK]  DEFAULT ((1)) FOR [DeliveryAddressTypeFK]
+GO
+
+CREATE TABLE [dbo].[tblDepartments](
+	[DepartmentPK] [int] IDENTITY(1,1) NOT NULL,
+	[DepartmentCode] [nvarchar](50) NOT NULL,
+	[DepartmentName] [nvarchar](100) NOT NULL,
+	[BuildingUnitFK] [int] NOT NULL,
+	[DivisionTypeFK] [int] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDepartments] PRIMARY KEY CLUSTERED 
+(
+	[DepartmentPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[tblDivisions](
+	[DivisionPK] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerFK] [int] NOT NULL,
+	[DivisionName] [nvarchar](200) NOT NULL,
+	[DivisionCode] [nvarchar](100) NOT NULL,
+	[Address1] [nvarchar](200) NOT NULL,
+	[Address2] [nvarchar](200) NOT NULL,
+	[Address3] [nvarchar](200) NOT NULL,
+	[Address4] [nvarchar](200) NOT NULL,
+	[Address5] [nvarchar](200) NOT NULL,
+	[EmailAddress] [nvarchar](2000) NOT NULL,
+	[TelephoneNumber] [nvarchar](100) NOT NULL,
+	[FaxNumber] [nvarchar](100) NOT NULL,
+	[Comments] [nvarchar](1000) NOT NULL,
+	[MainContactFK] [int] NOT NULL,
+	[InvoiceContactFK] [int] NOT NULL,
+	[DivisionTypeFK] [int] NOT NULL,
+	[VatCodeFK] [int] NOT NULL,
+	[DepartmentFK] [int] NOT NULL,
+	[CurrencyFK] [int] NOT NULL,
+	[DefaultPalletTypeFK] [int] NOT NULL,
+	[FoundPalletDefaultStatusFK] [int] NOT NULL,
+	[LastInvoiceDate] [datetime] NOT NULL,
+	[InvoiceAuthorisationCode] [nvarchar](200) NOT NULL,
+	[InvoiceFrequencyFK] [int] NOT NULL,
+	[InvoiceMethodFK] [int] NOT NULL,
+	[InvoiceByCategory] [bit] NOT NULL,
+	[CustomInvoiceTitle] [nvarchar](100) NOT NULL,
+	[CustomInvoiceValue] [nvarchar](100) NOT NULL,
+	[PaymentTerms] [nvarchar](200) NOT NULL,
+	[MinimumInvoiceCharge] [decimal](18, 3) NOT NULL,
+	[MinimumStorageCharge] [decimal](18, 3) NOT NULL,
+	[HandlingInCharge] [decimal](18, 3) NOT NULL,
+	[HandlingInEachesTypeFK] [int] NOT NULL,
+	[HandlingInUnitTypeFK] [int] NOT NULL,
+	[HandlingInEachesNumber] [decimal](18, 3) NOT NULL,
+	[HandlingInUnitsNumber] [decimal](18, 3) NOT NULL,
+	[HandlingInChargeResultingPallets] [bit] NOT NULL,
+	[HandlingOutCharge] [decimal](18, 3) NOT NULL,
+	[HandlingOutEachesTypeFK] [int] NOT NULL,
+	[HandlingOutUnitTypeFK] [int] NOT NULL,
+	[HandlingOutEachesNumber] [decimal](18, 3) NOT NULL,
+	[HandlingOutUnitsNumber] [decimal](18, 3) NOT NULL,
+	[HandlingOutChargeResultingPallets] [bit] NOT NULL,
+	[CustomReportLabel] [nvarchar](100) NOT NULL,
+	[StockCodeHeading] [nvarchar](100) NOT NULL,
+	[BatchHeading] [nvarchar](100) NOT NULL,
+	[UnitsHeading] [nvarchar](100) NOT NULL,
+	[RequirePalletNumber] [bit] NOT NULL,
+	[RequireExpiryDate] [bit] NOT NULL,
+	[RequireManufactureDate] [bit] NOT NULL,
+	[RequireBestBefore] [bit] NOT NULL,
+	[CalculateManufactureDateFromBestBefore] [bit] NOT NULL,
+	[RequireDateOfReceipt] [bit] NOT NULL,
+	[RequireCustomerBarcodeForReconciliation] [bit] NOT NULL,
+	[AllowSplitEaches] [bit] NOT NULL,
+	[AutoEmailStockIn] [bit] NOT NULL,
+	[AutoEmailStockOut] [bit] NOT NULL,
+	[AutoEmailStockTransferIn] [bit] NOT NULL,
+	[AutoEmailStockTransferOut] [bit] NOT NULL,
+	[AutoEmailStockOrder] [bit] NOT NULL,
+	[AutoStockInEmailAddress] [nvarchar](2000) NOT NULL,
+	[AutoStockInEmailSubject] [nvarchar](200) NOT NULL,
+	[AutoStockOutEmailAddress] [nvarchar](2000) NOT NULL,
+	[AutoStockOutEmailSubject] [nvarchar](200) NOT NULL,
+	[AutoStockOrderEmailAddress] [nvarchar](2000) NOT NULL,
+	[AutoStockOrderEmailSubject] [nvarchar](200) NOT NULL,
+	[AutoStockTransferInEmailAddress] [nvarchar](2000) NOT NULL,
+	[AutoStockTransferInEmailSubject] [nvarchar](200) NOT NULL,
+	[AutoStockTransferOutEmailAddress] [nvarchar](2000) NOT NULL,
+	[AutoStockTransferOutEmailSubject] [nvarchar](200) NOT NULL,
+	[ExtraStockOutLabels] [bit] NOT NULL,
+	[AllowClientStockIns] [bit] NOT NULL,
+	[ImportContainerIns] [bit] NOT NULL,
+	[ImportContainerInEdits] [bit] NOT NULL,
+	[ExportGoodsReceipt] [bit] NOT NULL,
+	[GoodsReceiptExportTypeFK] [int] NOT NULL,
+	[ExportContainerInAcknowledgement] [bit] NOT NULL,
+	[ExportContainerInEditAcknowledgement] [bit] NOT NULL,
+	[ExportContainerOutAcknowledgement] [bit] NOT NULL,
+	[ExportContainerOutPickStarted] [bit] NOT NULL,
+	[ExportContainerOutPickCompleted] [bit] NOT NULL,
+	[ExportContainerOutPickLoaded] [bit] NOT NULL,
+	[ImportContainerOuts] [bit] NOT NULL,
+	[ExportContainerOuts] [bit] NOT NULL,
+	[ManageStock] [bit] NOT NULL,
+	[ManageBatch] [bit] NOT NULL,
+	[ReconcileInventory] [bit] NOT NULL,
+	[ExportDiscrepencies] [bit] NOT NULL,
+	[ExportDiscrepenciesOneShot] [bit] NOT NULL,
+	[ExportSamples] [bit] NOT NULL,
+	[ContainerOutReleaseCheck] [bit] NOT NULL,
+	[CompanyLogo] [nvarchar](1000) NOT NULL,
+	[BarcodeFile] [nvarchar](300) NOT NULL,
+	[BarcodeLogo] [nvarchar](1000) NOT NULL,
+	[GS1Compliant] [bit] NOT NULL,
+	[AllowNewContainerInsFromHandHeld] [bit] NOT NULL,
+	[DefaultTransportCompanyFK] [int] NOT NULL,
+	[DefaultSupplierFK] [int] NOT NULL,
+	[DefaultShippingCompanyFK] [int] NOT NULL,
+	[GenerateCustomerPalletBarcodes] [bit] NOT NULL,
+	[ManualBatchGeneration] [bit] NOT NULL,
+	[GeneratedBatchPrefix] [nvarchar](100) NOT NULL,
+	[GeneratedBatchLength] [int] NOT NULL,
+	[NextBatch] [int] NOT NULL,
+	[ManageStockOrderRejections] [bit] NOT NULL,
+	[ManagePalletStatus] [bit] NOT NULL,
+	[ExportRepacks] [bit] NOT NULL,
+	[ExportDiscrepencyAcknowledgements] [bit] NOT NULL,
+	[SupplierStockInTolerances] [bit] NOT NULL,
+	[SupplierStockInOutOfToleranceMessage] [nvarchar](500) NOT NULL,
+	[SupplierStockInToleranceAbove] [decimal](18, 3) NOT NULL,
+	[SupplierStockInToleranceBelow] [decimal](18, 3) NOT NULL,
+	[SupplierBatchKeypressJavascript] [nvarchar](max) NOT NULL,
+	[ExportDiscrepencyDetail] [bit] NOT NULL,
+	[ExportPalletStatusChange] [bit] NOT NULL,
+	[ExportPalletStatusChangeAcknowledgements] [bit] NOT NULL,
+	[ExportPalletStatusChangeDetail] [bit] NOT NULL,
+	[ExportScrapLocationMonitoredMovement] [bit] NOT NULL,
+	[ExportSamplingLocationMonitoredMovement] [bit] NOT NULL,
+	[StockOrderNoUpperTolerance] [bit] NOT NULL,
+	[StockOrderNoLowerTolerance] [bit] NOT NULL,
+	[StockOrderUpperTolerance] [decimal](18, 3) NOT NULL,
+	[StockOrderLowerTolerance] [decimal](18, 3) NOT NULL,
+	[AllowMixedTopups] [bit] NOT NULL,
+	[AllowOpenStatusPicks] [bit] NOT NULL,
+	[AllowMixedPalletsOnStockOut] [int] NOT NULL,
+	[AllowMixedPalletsOnStockIn] [int] NOT NULL,
+	[PickTypeFK] [int] NOT NULL,
+	[StockInLabelOrderFK] [int] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+	[DelayContainerOutPickLoaded] [bit] NOT NULL,
+	[Integrated] [bit] NULL,
+	[AutoEmailWorksOrderRelabelling] [bit] NOT NULL,
+	[AutoWorksOrderRelabellingEmailAddress] [nvarchar](1000) NOT NULL,
+	[PrintCustomerBarcodeOnLabel] [bit] NOT NULL,
+	[StockOrderQuantityTolerancePercentage] [int] NOT NULL,
+	[DefaultPalletStatusFK] [int] NOT NULL,
+	[RequirePhysicalCheckDuringMarketStockOrder] [bit] NOT NULL,
+	[PhysicalCheckStagingAreaTypeFK] [int] NOT NULL,
+	[AllowCustomerPalletBarcodeManualEntry] [bit] NOT NULL,
+	[AutoEmailRuleChange] [bit] NOT NULL,
+	[AutoEmailRuleChangeEmailAddress] [nvarchar](1000) NOT NULL,
+	[RequirePhysicalCheckDuringScrappageStockOrder] [bit] NOT NULL,
+	[RequirePhysicalCheckDuringSamplingStockOrder] [bit] NOT NULL,
+	[RequirePhysicalCheckDuringDiscrepencyStockOrder] [bit] NOT NULL,
+	[RequirePhysicalCheckDuringFactoryStockOrder] [bit] NOT NULL,
+	[RequireOutboundSAD] [bit] NOT NULL,
+	[RequireInboundSAD] [bit] NOT NULL,
+	[AutoEmailEndOfDayInventory] [bit] NOT NULL,
+	[AutoEmailEndOfDayInventoryEmailAddress] [nvarchar](2000) NOT NULL,
+	[AutoEmailEndOfDayInventoryEmailSubject] [nvarchar](200) NOT NULL,
+	[ShowExtraDocketsOnStockOut] [bit] NOT NULL,
+	[IntegratedStorageLocation] [nvarchar](200) NOT NULL,
+	[CreateStockItemsDuringImport] [bit] NOT NULL,
+	[AutoEmailClientStockOut] [bit] NOT NULL,
+	[AutoEmailClientStockOutEmailAddress] [nvarchar](2000) NOT NULL,
+	[AutoEmailClientStockOutSubject] [nvarchar](200) NOT NULL,
+	[AllowPalletGroupingOnStockOut] [bit] NOT NULL,
+	[AllowClientToPickByPallet] [bit] NOT NULL,
+	[PrintSupplierBatchOnLabel] [bit] NOT NULL,
+	[InvoiceStorageCharge] [bit] NOT NULL,
+	[InvoiceExtraServiceCharge] [bit] NOT NULL,
+	[InvoiceRecurringCharge] [bit] NOT NULL,
+	[InvoiceDistributionCharge] [bit] NOT NULL,
+	[RecurringChargeFrequencyFK] [int] NOT NULL,
+	[AutoGenerateInvoice] [bit] NOT NULL,
+	[InvoiceWeeklyBreakdownWithinMonth] [bit] NOT NULL,
+	[OrderBySequence] [bit] NULL,
+	[AutoEmailStockEdits] [bit] NOT NULL,
+	[AutoStockEditEmailAddress] [nvarchar](4000) NOT NULL,
+	[AutoStockEditEmailSubject] [nvarchar](400) NOT NULL,
+	[DefaultInvoiceEmailSubject] [nvarchar](255) NULL,
+	[CustomSageCode] [varchar](200) NULL,
+	[AllowBarcodeCompare] [int] NULL,
+	[ScheduleStockControllerEmail] [varchar](500) NULL,
+	[ScheduleDeliveryReadyToScheduleEmail] [varchar](500) NULL,
+ CONSTRAINT [PK_tblDivisions] PRIMARY KEY CLUSTERED 
+(
+	[DivisionPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Defau__07F6FEB1]  DEFAULT ((-1)) FOR [DefaultPalletTypeFK]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_FoundPalletDefaultStatusFK]  DEFAULT ((7)) FOR [FoundPalletDefaultStatusFK]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Invoi__5E00C4E5]  DEFAULT (CONVERT([bit],(0),(0))) FOR [InvoiceByCategory]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_MinimumStorageCharge]  DEFAULT ((0.000)) FOR [MinimumStorageCharge]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_CalculateManufactureDateFromBestBefore]  DEFAULT (CONVERT([bit],(0),(0))) FOR [CalculateManufactureDateFromBestBefore]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_RequireCustomerBarcodeForReconciliation]  DEFAULT (CONVERT([bit],(0),(0))) FOR [RequireCustomerBarcodeForReconciliation]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Impor__2C9E737B]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ImportContainerInEdits]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_ExportContainerInAcknowledgement]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportContainerInAcknowledgement]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Expor__2D9297B4]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportContainerInEditAcknowledgement]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_ExportContainerOutAcknowledgement]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportContainerOutAcknowledgement]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_ExportContainerOutPickStart]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportContainerOutPickStarted]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_ExportContainerOutPickCompleted]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportContainerOutPickCompleted]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_ExportContainerOutPickLoaded]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportContainerOutPickLoaded]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Expor__5D41AAD6]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportDiscrepenciesOneShot]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_ExportSamples]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportSamples]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Conta__10C14EDC]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ContainerOutReleaseCheck]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_GS1Compliant]  DEFAULT (CONVERT([bit],(0),(0))) FOR [GS1Compliant]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AllowNewContainerInsFromHandHeld]  DEFAULT ((0)) FOR [AllowNewContainerInsFromHandHeld]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Gener__703483B9]  DEFAULT (CONVERT([bit],(0),(0))) FOR [GenerateCustomerPalletBarcodes]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_ManualBatchGeneration]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ManualBatchGeneration]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_ManageStockOrderRejections]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ManageStockOrderRejections]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Manag__0AB36FCB]  DEFAULT ((0)) FOR [ManagePalletStatus]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Expor__0BA79404]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportRepacks]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Expor__0C9BB83D]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportDiscrepencyAcknowledgements]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Suppl__3EF22DE0]  DEFAULT (CONVERT([bit],(0),(0))) FOR [SupplierStockInTolerances]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Suppl__3FE65219]  DEFAULT ('') FOR [SupplierStockInOutOfToleranceMessage]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Suppl__40DA7652]  DEFAULT ((0)) FOR [SupplierStockInToleranceAbove]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Suppl__41CE9A8B]  DEFAULT ((0)) FOR [SupplierStockInToleranceBelow]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Suppl__42C2BEC4]  DEFAULT ('') FOR [SupplierBatchKeypressJavascript]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Expor__0D8FDC76]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportDiscrepencyDetail]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Expor__0E8400AF]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportPalletStatusChange]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Expor__0F7824E8]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportPalletStatusChangeAcknowledgements]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Expor__106C4921]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportPalletStatusChangeDetail]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_ExportScrapLocationMonitoredMovement]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportScrapLocationMonitoredMovement]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_ExportSamplingLocationMonitoredMovement]  DEFAULT (CONVERT([bit],(0),(0))) FOR [ExportSamplingLocationMonitoredMovement]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Stock__2E86BBED]  DEFAULT (CONVERT([bit],(0),(0))) FOR [StockOrderNoUpperTolerance]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Stock__2F7AE026]  DEFAULT (CONVERT([bit],(0),(0))) FOR [StockOrderNoLowerTolerance]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Stock__306F045F]  DEFAULT ((0)) FOR [StockOrderUpperTolerance]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF__tblDivisi__Stock__31632898]  DEFAULT ((0)) FOR [StockOrderLowerTolerance]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AllowMixedTopups]  DEFAULT (CONVERT([bit],(0),(0))) FOR [AllowMixedTopups]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AllowOpenStatusPicks]  DEFAULT (CONVERT([bit],(0),(0))) FOR [AllowOpenStatusPicks]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AllowMixedPalletsOnStockOut]  DEFAULT ((1)) FOR [AllowMixedPalletsOnStockOut]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AllowMixedPalletsOnStockIn]  DEFAULT ((1)) FOR [AllowMixedPalletsOnStockIn]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_PickTypeFK]  DEFAULT ((1)) FOR [PickTypeFK]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  DEFAULT ((0)) FOR [DelayContainerOutPickLoaded]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  DEFAULT ((0)) FOR [Integrated]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AutoEmailWorksOrderRelabelling]  DEFAULT (CONVERT([bit],(0))) FOR [AutoEmailWorksOrderRelabelling]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AutoWorksOrderRelabellingEmailAddress]  DEFAULT (' ') FOR [AutoWorksOrderRelabellingEmailAddress]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_PrintCustomerBarcodeOnLabel]  DEFAULT (CONVERT([bit],(0))) FOR [PrintCustomerBarcodeOnLabel]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_StockOrderQuantityTolerancePercentage]  DEFAULT ((10)) FOR [StockOrderQuantityTolerancePercentage]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_DefaultPalletStatusFK]  DEFAULT ((1)) FOR [DefaultPalletStatusFK]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_RequirePhysicalCheckDuringStockOrder]  DEFAULT ((0)) FOR [RequirePhysicalCheckDuringMarketStockOrder]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_PhysicalCheckStagingAreaTypeFK]  DEFAULT ((-1)) FOR [PhysicalCheckStagingAreaTypeFK]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AllowCustomerPalletBarcodeManualEntry]  DEFAULT ((0)) FOR [AllowCustomerPalletBarcodeManualEntry]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AutoEmailRuleChange]  DEFAULT (CONVERT([bit],(0))) FOR [AutoEmailRuleChange]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AutoEmailRuleChangeEmailAddress]  DEFAULT (' ') FOR [AutoEmailRuleChangeEmailAddress]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  DEFAULT ((0)) FOR [RequirePhysicalCheckDuringScrappageStockOrder]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  DEFAULT ((0)) FOR [RequirePhysicalCheckDuringSamplingStockOrder]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  DEFAULT ((0)) FOR [RequirePhysicalCheckDuringDiscrepencyStockOrder]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  DEFAULT ((0)) FOR [RequirePhysicalCheckDuringFactoryStockOrder]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  DEFAULT ((0)) FOR [RequireOutboundSAD]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  DEFAULT ((0)) FOR [RequireInboundSAD]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AutoEmailEndOfDayInventory]  DEFAULT ((0)) FOR [AutoEmailEndOfDayInventory]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AutoEmailEndOfDayInventoryEmailAddress]  DEFAULT (' ') FOR [AutoEmailEndOfDayInventoryEmailAddress]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AutoEmailEndOfDayInventoryEmailSubject]  DEFAULT (' ') FOR [AutoEmailEndOfDayInventoryEmailSubject]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_ShowExtraDocketsOnStockOut]  DEFAULT ((1)) FOR [ShowExtraDocketsOnStockOut]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_IntegratedStorageLocation]  DEFAULT (' ') FOR [IntegratedStorageLocation]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_CreateStockItemsDuringImport]  DEFAULT ((0)) FOR [CreateStockItemsDuringImport]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AutoEmailClientStockOut]  DEFAULT ((0)) FOR [AutoEmailClientStockOut]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AutoEmailClientStockOutEmailAddress]  DEFAULT (' ') FOR [AutoEmailClientStockOutEmailAddress]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AutoEmailClientStockOutSubject]  DEFAULT (' ') FOR [AutoEmailClientStockOutSubject]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AllowPalletGroupingOnStockOut]  DEFAULT ((0)) FOR [AllowPalletGroupingOnStockOut]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AllowClientToPickByPallet]  DEFAULT ((0)) FOR [AllowClientToPickByPallet]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_PrintSupplierBatchOnLabel]  DEFAULT ((0)) FOR [PrintSupplierBatchOnLabel]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_InvoiceStorageCharge]  DEFAULT (CONVERT([bit],(0))) FOR [InvoiceStorageCharge]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_InvoiceExtraServiceCharge]  DEFAULT (CONVERT([bit],(0))) FOR [InvoiceExtraServiceCharge]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_InvoiceRecurringCharge]  DEFAULT (CONVERT([bit],(0))) FOR [InvoiceRecurringCharge]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_InvoiceDistributionCharge]  DEFAULT (CONVERT([bit],(0))) FOR [InvoiceDistributionCharge]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_RecurringChargeFrequencyFK]  DEFAULT ((-1)) FOR [RecurringChargeFrequencyFK]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_AutoGenerateInvoice]  DEFAULT (CONVERT([bit],(0))) FOR [AutoGenerateInvoice]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_InvoiceWeeklyBreakdownWithinMonth]  DEFAULT (CONVERT([bit],(0))) FOR [InvoiceWeeklyBreakdownWithinMonth]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [D_tbldivisions_OrderBySequence]  DEFAULT ((0)) FOR [OrderBySequence]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  DEFAULT ('0') FOR [AutoEmailStockEdits]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  DEFAULT ('') FOR [AutoStockEditEmailAddress]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  DEFAULT ('') FOR [AutoStockEditEmailSubject]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  DEFAULT ('') FOR [CustomSageCode]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [D_AllowBarcodeCompare_col]  DEFAULT ((3)) FOR [AllowBarcodeCompare]
+GO
+
+ALTER TABLE [dbo].[tblDivisions] ADD  CONSTRAINT [DF_tblDivisions_ScheduleDeliveryReadyToScheduleEmail]  DEFAULT ('') FOR [ScheduleDeliveryReadyToScheduleEmail]
+GO
+
+
+CREATE TABLE [dbo].[tblDivisionBuildingUnitBays](
+	[DivisionBuildingUnitBayPK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionFK] [int] NOT NULL,
+	[BuildingUnitBayFK] [int] NOT NULL,
+	[BuildingUnitRowFK] [int] NOT NULL,
+	[BuildingUnitFK] [int] NOT NULL,
+	[IsExclusive] [bit] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionBuildingUnitBays] PRIMARY KEY CLUSTERED 
+(
+	[DivisionBuildingUnitBayPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[tblDivisionBuildingUnits](
+	[DivisionBuildingUnitPK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionFK] [int] NOT NULL,
+	[IsDefault] [bit] NOT NULL,
+	[BuildingUnitFK] [int] NOT NULL,
+	[PickModeFK] [int] NOT NULL,
+	[PickModeOccupancyThreshold] [int] NOT NULL,
+	[DefaultLoadingBayFK] [int] NOT NULL,
+	[DefaultDistributionLoadingBayFK] [int] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionBuildingUnits] PRIMARY KEY CLUSTERED 
+(
+	[DivisionBuildingUnitPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[tblDivisionBuildingUnits] ADD  CONSTRAINT [DF_tblDivisionBuildingUnits_IsDefault]  DEFAULT (CONVERT([bit],(0),(0))) FOR [IsDefault]
+GO
+
+
+
+CREATE TABLE [dbo].[tblDivisionDeliveryAddresses](
+	[DivisionDeliveryAddressPK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionFK] [int] NOT NULL,
+	[DeliveryAddressFK] [int] NOT NULL,
+	[WarehousingLocked] [bit] NOT NULL,
+	[WarehousingClientLocked] [bit] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionDeliveryAddresses] PRIMARY KEY CLUSTERED 
+(
+	[DivisionDeliveryAddressPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+CREATE TABLE [dbo].[tblDivisionDistributionPackagingTypes](
+	[DivisionDistributionPackagingTypePK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionFK] [int] NOT NULL,
+	[DistributionPackagingTypeFK] [int] NOT NULL,
+	[Charge] [decimal](18, 3) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionDistributionPackagingTypes1] PRIMARY KEY CLUSTERED 
+(
+	[DivisionDistributionPackagingTypePK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+CREATE TABLE [dbo].[tblDivisionDistributionShippingCharges](
+	[DivisionDistributionShippingChargePK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionFK] [int] NOT NULL,
+	[DistributionShippingChargeTypeFK] [int] NOT NULL,
+	[Charge] [decimal](18, 3) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionDistributionShippingCharges1] PRIMARY KEY CLUSTERED 
+(
+	[DivisionDistributionShippingChargePK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+CREATE TABLE [dbo].[tblDivisionDocketExtraFields](
+	[DivisionDocketExtraFieldPK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionFK] [int] NOT NULL,
+	[DocketTypeFK] [int] NOT NULL,
+	[ExtraFieldName] [nvarchar](200) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionDocketExtraFields] PRIMARY KEY CLUSTERED 
+(
+	[DivisionDocketExtraFieldPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[tblDivisionExtraServices](
+	[DivisionExtraServicePK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionFK] [int] NOT NULL,
+	[Name] [nvarchar](200) NOT NULL,
+	[Description] [nvarchar](500) NOT NULL,
+	[ExtraServiceCodeFK] [int] NOT NULL,
+	[Charge] [decimal](18, 3) NOT NULL,
+	[ChargeSubjectFK] [int] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionExtraServices] PRIMARY KEY CLUSTERED 
+(
+	[DivisionExtraServicePK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[tblDivisionGS1MandatoryFields](
+	[DivisionGS1MandatoryFieldPK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionFK] [int] NOT NULL,
+	[FieldFK] [int] NOT NULL,
+	[AI_1] [nvarchar](50) NOT NULL,
+	[AI_2] [nvarchar](50) NOT NULL,
+	[AI_3] [nvarchar](50) NOT NULL,
+	[AI_4] [nvarchar](50) NOT NULL,
+	[AI_5] [nvarchar](50) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+	[AI_6] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_tblDivisionGS1MandatoryFields] PRIMARY KEY CLUSTERED 
+(
+	[DivisionGS1MandatoryFieldPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[tblDivisionGS1MandatoryFields] ADD  CONSTRAINT [DF_tblDivisionGS1MandatoryFields_AI_6]  DEFAULT ('') FOR [AI_6]
+GO
+
+
+
+CREATE TABLE [dbo].[tblDivisionOnlyWorksOrderCountryRules](
+	[DivisionOnlyWorksOrderCountryRulePK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionFK] [int] NOT NULL,
+	[CountryFK] [int] NOT NULL,
+	[WorksOrderTypeFK] [int] NOT NULL,
+	[ChargeSubjectFK] [int] NOT NULL,
+	[ChargeEachesTypeFK] [int] NOT NULL,
+	[ChargeUnitTypeFK] [int] NOT NULL,
+	[ChargeEachesNumber] [decimal](18, 3) NOT NULL,
+	[ChargeUnitsNumber] [decimal](18, 3) NOT NULL,
+	[Charge] [decimal](18, 3) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionOnlyWorksOrderCountryRules] PRIMARY KEY CLUSTERED 
+(
+	[DivisionOnlyWorksOrderCountryRulePK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+CREATE TABLE [dbo].[tblDivisionPalletStatus](
+	[DivisionPalletStatusPK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionFK] [int] NOT NULL,
+	[PalletStatusFK] [int] NOT NULL,
+	[AllowedStockOut] [bit] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionPalletStatus] PRIMARY KEY CLUSTERED 
+(
+	[DivisionPalletStatusPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+
+CREATE TABLE [dbo].[tblDivisionPalletType](
+	[DivisionPalletTypePK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionFK] [int] NOT NULL,
+	[PalletTypeFK] [int] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionPalletType] PRIMARY KEY CLUSTERED 
+(
+	[DivisionPalletTypePK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+CREATE TABLE [dbo].[tblDivisionScheduledTask](
+	[DivisionScheduledTaskPK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionFK] [int] NOT NULL,
+	[ScheduledTaskTypeFK] [int] NOT NULL,
+	[EmailAddress] [nvarchar](200) NOT NULL,
+	[LastProcessedDate] [datetime] NOT NULL,
+	[LastProcessedFKS] [nvarchar](200) NOT NULL,
+	[CustomEmailMessage] [nvarchar](500) NOT NULL,
+	[Enabled] [bit] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionsScheduledTask] PRIMARY KEY CLUSTERED 
+(
+	[DivisionScheduledTaskPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[tblDivisionScheduledTask] ADD  CONSTRAINT [DF_tblDivisionScheduledTask_ScheduledTaskFixTypeFK]  DEFAULT ((1)) FOR [ScheduledTaskTypeFK]
+GO
+
+
+CREATE TABLE [dbo].[tblDivisionStockOrderLinePallets](
+	[DivisionStockOrderLinePalletPK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionStockOrderLineFK] [int] NOT NULL,
+	[PalletFK] [int] NOT NULL,
+	[PalletsOut] [int] NOT NULL,
+	[EachesOut] [decimal](18, 3) NOT NULL,
+	[UnitsOut] [decimal](18, 3) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionStockOrderLinePallets] PRIMARY KEY CLUSTERED 
+(
+	[DivisionStockOrderLinePalletPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+CREATE TABLE [dbo].[tblDivisionStockOrderLines](
+	[DivisionStockOrderLinePK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionStockOrderFK] [int] NOT NULL,
+	[StockItemFK] [int] NOT NULL,
+	[Batch] [nvarchar](200) NOT NULL,
+	[PalletsOut] [int] NOT NULL,
+	[EachesOut] [decimal](18, 3) NOT NULL,
+	[UnitsOut] [decimal](18, 3) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionStockOrderLines] PRIMARY KEY CLUSTERED 
+(
+	[DivisionStockOrderLinePK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[tblDivisionStockOrders](
+	[DivisionStockOrderPK] [int] IDENTITY(1,1) NOT NULL,
+	[StockOrderFK] [int] NOT NULL,
+	[DivisionFK] [int] NOT NULL,
+	[GoodsOrderNumber] [nvarchar](200) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionStockOrders] PRIMARY KEY CLUSTERED 
+(
+	[DivisionStockOrderPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[tblDivisionTypes](
+	[DivisionTypePK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionType] [nvarchar](100) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionTypes] PRIMARY KEY CLUSTERED 
+(
+	[DivisionTypePK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[tblDivisionWorksOrderCountryRules](
+	[DivisionWorksOrderCountryRulePK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionFK] [int] NOT NULL,
+	[CountryRuleFK] [int] NOT NULL,
+	[ChargeSubjectFK] [int] NOT NULL,
+	[ChargeEachesTypeFK] [int] NOT NULL,
+	[ChargeUnitTypeFK] [int] NOT NULL,
+	[ChargeEachesNumber] [decimal](18, 3) NOT NULL,
+	[ChargeUnitsNumber] [decimal](18, 3) NOT NULL,
+	[Charge] [decimal](18, 3) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionCountryrules] PRIMARY KEY CLUSTERED 
+(
+	[DivisionWorksOrderCountryRulePK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+CREATE TABLE [dbo].[tblDivisionWorksOrders](
+	[DivisionWorksOrderPK] [int] IDENTITY(1,1) NOT NULL,
+	[WorksOrderOriginFK] [int] NULL,
+	[WorkOrderTypeFK] [int] NULL,
+	[DivisionFK] [int] NULL,
+	[DivisionExtraServiceFK] [int] NULL,
+	[Optional] [bit] NULL,
+	[Scanners] [bit] NULL,
+	[ExtraService] [bit] NULL,
+	[IsArchived] [bit] NULL,
+	[InsertedBy] [int] NULL,
+	[InsertedDate] [datetime] NULL,
+	[UpdatedBy] [int] NULL,
+	[UpdatedDate] [datetime] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[DivisionWorksOrderPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[tblDivisionWorksOrders]  WITH CHECK ADD FOREIGN KEY([DivisionFK])
+REFERENCES [dbo].[tblDivisions] ([DivisionPK])
+GO
+
+ALTER TABLE [dbo].[tblDivisionWorksOrders]  WITH CHECK ADD FOREIGN KEY([WorkOrderTypeFK])
+REFERENCES [dbo].[appWorksOrderTypes] ([WorksOrderTypePK])
+GO
+
+ALTER TABLE [dbo].[tblDivisionWorksOrders]  WITH CHECK ADD FOREIGN KEY([WorksOrderOriginFK])
+REFERENCES [dbo].[appWorksOrderOrigins] ([WorksOrderOriginPK])
+GO
+
+
+
+CREATE TABLE [dbo].[tblDivisionXmlExportDocumentNodes](
+	[DivisionXmlExportDocumentNodePK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionXmlExportDocumentFK] [int] NOT NULL,
+	[Repeating] [bit] NOT NULL,
+	[ParentDivisionXmlExportDocumentNodeFK] [int] NOT NULL,
+	[NodeReference] [nvarchar](1000) NOT NULL,
+	[Attribute] [nvarchar](500) NOT NULL,
+	[ParentNodeReference] [nvarchar](1000) NOT NULL,
+	[ValueFieldFK] [int] NOT NULL,
+	[HardValue] [nvarchar](1000) NOT NULL,
+	[StoredProcedure] [nvarchar](500) NOT NULL,
+	[ExternalStoredProcedure] [nvarchar](500) NOT NULL,
+	[StoredProcedureFieldName] [nvarchar](200) NOT NULL,
+	[SQLforLayer] [nvarchar](max) NOT NULL,
+	[SQLforLayerCheck] [nvarchar](max) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionXmlExportDocumentNodes] PRIMARY KEY CLUSTERED 
+(
+	[DivisionXmlExportDocumentNodePK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[tblDivisionXmlExportDocumentNodes] ADD  CONSTRAINT [DF_tblDivisionXmlExportDocumentNodes_SQLforLayer]  DEFAULT ('') FOR [SQLforLayer]
+GO
+
+ALTER TABLE [dbo].[tblDivisionXmlExportDocumentNodes] ADD  CONSTRAINT [DF_tblDivisionXmlExportDocumentNodes_SQLforLayerCheck]  DEFAULT ('') FOR [SQLforLayerCheck]
+GO
+
+
+CREATE TABLE [dbo].[tblDivisionXmlExportDocuments](
+	[DivisionXmlExportDocumentPK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionFK] [int] NOT NULL,
+	[XmlExportDocumentFK] [int] NOT NULL,
+	[DocumentTemplate] [nvarchar](500) NOT NULL,
+	[Flag1] [bit] NOT NULL,
+	[Flag2] [bit] NOT NULL,
+	[Flag3] [bit] NOT NULL,
+	[Flag4] [bit] NOT NULL,
+	[Flag5] [bit] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionXmlExportDocuments] PRIMARY KEY CLUSTERED 
+(
+	[DivisionXmlExportDocumentPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+CREATE TABLE [dbo].[tblDivisionXmlImportDocumentNodes](
+	[DivisionXmlImportDocumentNodePK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionXmlImportDocumentFK] [int] NOT NULL,
+	[Repeating] [bit] NOT NULL,
+	[ParentDivisionXmlImportDocumentNodeFK] [int] NOT NULL,
+	[NodeReference] [nvarchar](1000) NOT NULL,
+	[ValueFieldFK] [int] NOT NULL,
+	[HardValue] [nvarchar](1000) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionXmlImportDocumentNodes] PRIMARY KEY CLUSTERED 
+(
+	[DivisionXmlImportDocumentNodePK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+
+CREATE TABLE [dbo].[tblDivisionXmlImportDocuments](
+	[DivisionXmlImportDocumentPK] [int] IDENTITY(1,1) NOT NULL,
+	[DivisionFK] [int] NOT NULL,
+	[XmlImportDocumentFK] [int] NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDivisionXmlImportDocuments] PRIMARY KEY CLUSTERED 
+(
+	[DivisionXmlImportDocumentPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[tblDocketExtraFieldValues](
+	[DocketExtraFieldValuePK] [int] IDENTITY(1,1) NOT NULL,
+	[DocketTypeFK] [int] NOT NULL,
+	[FK] [int] NOT NULL,
+	[DivisionDocketExtraFieldFK] [int] NOT NULL,
+	[ExtraFieldName] [nvarchar](200) NOT NULL,
+	[Value] [nvarchar](500) NOT NULL,
+	[IsArchived] [bit] NOT NULL,
+	[InsertedBy] [int] NOT NULL,
+	[InsertedDate] [datetime] NOT NULL,
+	[UpdatedBy] [int] NOT NULL,
+	[UpdatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_tblDocketExtraFieldValues] PRIMARY KEY CLUSTERED 
+(
+	[DocketExtraFieldValuePK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+CREATE TABLE [dbo].[tblDocumentUpload](
+	[DocumentPK] [int] IDENTITY(1,1) NOT NULL,
+	[GoodsInNumber] [nvarchar](500) NOT NULL,
+	[OriginalFileName] [nvarchar](500) NOT NULL,
+	[BlobName] [nvarchar](500) NOT NULL,
+	[BlobUrl] [nvarchar](1000) NOT NULL,
+	[IsArchived] [bit] NULL,
+	[InsertedBy] [int] NULL,
+	[InsertedDate] [datetime] NULL,
+	[UpdatedBy] [int] NULL,
+	[UpdatedDate] [datetime] NULL,
+ CONSTRAINT [PK_tblDocument] PRIMARY KEY CLUSTERED 
+(
+	[DocumentPK] ASC
+)WITH (STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
